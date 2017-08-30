@@ -1,0 +1,160 @@
+.box1{
+	background-color: white;
+	transform: scale(1);
+  cursor: pointer;
+  transition: transform 500ms linear; 
+}
+.box1:hover {
+		background-color: #DC4C46;
+		transform: scale(.5);
+			}
+.box2{
+	background-color: white;
+	transform: scale(1);
+  cursor: pointer;
+  transition: transform 500ms linear; 
+}
+.box2:hover {
+		background-color: #672E3B;
+		transform: scale(.5);
+			}
+.box3{
+	background-color: white;
+	transform: scale(1);
+  cursor: pointer;
+  transition: transform 500ms linear; 
+}
+.box3:hover {
+		background-color: #F3D6E4;
+		transform: scale(.5);
+			}
+.box4{
+	background-color: white;
+	transform: scale(1);
+  cursor: pointer;
+  transition: transform 500ms linear; 
+}
+.box4:hover {
+		background-color: #C48F65;
+		transform: scale(.5);
+			}
+.box5{
+	background-color: white;
+	transform: scale(1);
+  cursor: pointer;
+  transition: transform 500ms linear; 
+}
+.box5:hover {
+		background-color: #fc9a18;
+		transform: scale(.5);
+			}
+.box6{
+	background-color: white;
+	transform: scale(1);
+  cursor: pointer;
+  transition: transform 500ms linear; 
+}
+.box6:hover {
+		background-color: #898E8C;
+		transform: scale(.5);
+			}
+.box7{
+	background-color: white;
+	transform: scale(1);
+  cursor: pointer;
+  transition: transform 500ms linear; 
+}
+.box7:hover {
+		background-color: #005960;
+		transform: scale(.5);
+			}
+.box8{
+	background-color: white;
+	transform: scale(1);
+  cursor: pointer;
+  transition: transform 500ms linear; 
+}
+.box8:hover {
+		background-color: #9C9A40;
+		transform: scale(.5);
+			}
+.box9{
+	background-color: white;
+	transform: scale(1);
+  cursor: pointer;
+  transition: transform 500ms linear; 
+}
+.box9:hover {
+		background-color: #4F84C4;
+		transform: scale(.5);
+			}
+.box10{
+	background-color: white;
+	transform: scale(1);
+  cursor: pointer;
+  transition: transform 500ms linear; 
+}
+.box10:hover {
+		background-color: #D2691E;
+		transform: scale(.5);
+			}
+.box11{
+	background-color: white;
+	transform: scale(1);
+  cursor: pointer;
+  transition: transform 500ms linear; 
+}
+.box11:hover {
+		background-color: #578CA9;
+		transform: scale(.5);
+			}
+.box12{
+	background-color: white;
+	transform: scale(1);
+  cursor: pointer;
+  transition: transform 500ms linear; 
+}
+.box12:hover {
+		background-color: #F6D155;
+		transform: scale(.5);
+			}
+.box13{
+	background-color: white;
+	transform: scale(1);
+  cursor: pointer;
+  transition: transform 500ms linear; 
+}
+.box13:hover {
+		background-color: #004B8D;
+		transform: scale(.5);
+			}
+.box14{
+	background-color: white;
+	transform: scale(1);
+  cursor: pointer;
+  transition: transform 500ms linear; 
+}
+.box14:hover {
+		background-color: #F2552C;
+		transform: scale(.5);
+			}
+.box15{
+	background-color: white;
+	transform: scale(1);
+  cursor: pointer;
+  transition: transform 500ms linear; 
+}
+.box15:hover {
+		background-color: #EDCDC2;
+		transform: scale(.5);
+			}
+.box16{
+	background-color: white;
+	transform: scale(1);
+  cursor: pointer;
+  transition: transform 500ms linear; 
+}
+.box16:hover {
+		background-color: #5A7247;
+		transform: scale(.5);
+			}
