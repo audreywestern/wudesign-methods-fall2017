@@ -1,0 +1,2487 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Clicks &mdash; Audrey Western </title>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<style>
+
+			#main_content {
+				margin: 40px;
+			}
+
+			.body {
+				background-color: pink;
+			}
+			
+			.body.selected {
+				  background-color: red;
+				  	}
+
+
+			.btn_one {
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				cursor: pointer;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+			}
+
+
+			.btn_two {
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				cursor: pointer;
+				color: #fff;
+				text-align: center;
+				font-size: 50px;
+				transition-property: width;
+    			transition-duration: 2s;
+    			transition-timing-function: linear;
+    			transition-delay: 1s;
+    			font-size: 40px;
+			}
+	
+					.btn_two.selected {
+				  
+				  		animation-name: box;
+				  		height: 200px;
+				  		transform: rotate(180deg);
+				  	}
+
+
+			.btn_three {
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				cursor: pointer;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				transition: all 3s;
+			}
+
+					.btn_three.selected {
+						border-radius: 100px; 
+						transform: scale(2,2);
+					}
+			
+
+			.btn_four {
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				cursor: pointer;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				transition: 1.5s;
+				z-index: 10;
+			}
+
+					.btn_four.selected {
+						  animation-duration: 5s;
+						  border-radius: 20px;
+						  height: 200px;
+						  width: 300px;
+						  background-color: pink;
+					}
+
+			.btn_five {
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				cursor: pointer;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				transition-property: width;
+    			transition-duration: 2s;
+   				
+			}
+
+			.btn_five.selected {
+		  		background-color: orange;
+		  		animation-name: box;
+		  		width: 300px;
+			}
+
+			.btn_six {
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				cursor: pointer;
+    			transition-duration: 2s;
+    			font-size: 40px;
+    			color: #fff;
+    			text-align: center;
+			}
+
+			.btn_six.selected {
+		  		background-color: beige;
+		  		animation-name: box;
+		  		transform: rotate(360deg);
+			}
+
+			.btn_seven{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				cursor: pointer;
+    			transition-duration: 2s;
+    			font-size: 40px;
+    			color: #fff;
+    			text-align: center;
+			}
+
+			.btn_seven.selected {
+				background-color: beige;
+		  		transform: rotate(180deg);
+		  		font-size: 80px;
+			}
+
+			.btn_eight {
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				cursor: pointer;
+				transition: 1s;
+				font-size: 40px;
+    			color: #fff;
+    			text-align: center;
+			}
+	
+			.btn_eight.selected {
+		  		background-color: lightblue;
+		  		transform:translate(-25px,-25px);
+}
+			.btn_nine {
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				cursor: pointer;
+				transition-timing-function: ease-in-out;
+				font-size: 40px;
+    			color: #fff;
+    			text-align: center;
+			}
+
+			.btn_nine.selected {
+				background-color: linen;
+				transform:skew(30deg,30deg);
+			}
+
+			.btn_ten {
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				cursor: pointer;
+				transition-timing-function: ease-in-out;
+				transition: 1.5s;
+				font-size: 40px;
+    			color: #fff;
+    			text-align: center;
+			}
+
+			.btn_ten.selected {
+				border-radius: 100px; 
+				transform: scale(-2,0.2);
+			}
+
+			.btn_eleven {
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				cursor: pointer;
+				transition-timing-function: ease-in-out;
+				transition: 1.5s;
+				font-size: 40px;
+    			color: #fff;
+    			text-align: center;
+			}
+
+			.btn_eleven.selected {
+				background-color: lightyellow;
+				border-radius: 100px; 
+				border: 10px double tomato;
+				
+	}
+
+			.btn_twelve {
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				cursor: pointer;
+				transition: 1s;
+				font-size: 40px;
+    			color: #fff;
+    			text-align: center;
+			}
+
+			.btn_twelve.selected {
+			  	background-color: whitesmoke;
+			  	box-shadow: 10px 10px 5px #888888;
+	}
+
+			.btn_thirteen {
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				cursor: pointer;
+				font-size: 40px;
+    			color: #fff;
+    			text-align: center;
+			}
+
+			.btn_thirteen.selected {
+				background-color:lightblue;
+			}
+
+			.btn_fourteen {
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				cursor: pointer;
+				font-size: 40px;
+    			color: #fff;
+    			text-align: center;
+			}
+
+			.btn_fifteen{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				cursor: pointer;
+				font-size: 40px;
+    			color: #fff;
+    			text-align: center;
+			}
+
+			.btn_fifteen.selected {
+				transform:skewY(10deg);
+				width: 10%;
+				background-color: lightgreen;
+			}
+
+			.btn_sixteen{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				cursor: pointer;
+				font-size: 40px;
+    			color: #fff;
+    			text-align: center;
+			}
+
+			.btn_seventeen{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				cursor: pointer;
+				font-size: 40px;
+    			color: #fff;
+    			text-align: center;
+    			transition: 1s;
+				transition-timing-function: ease-in-out;
+			}
+
+			.btn_seventeen.selected {
+				border: 10px dotted teal;
+			}
+
+			.btn_eighteen{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				cursor: pointer;
+				font-size: 40px;
+    			color: #fff;
+    			text-align: center;
+			}
+					span {
+					      background: honeydew;
+					      padding: 3px;
+					      float: left;
+					      font-size: 20px;
+					      padding-top: 20px;
+						}
+
+			.btn_nineteen {
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				cursor: pointer;
+				font-size: 40px;
+    			color: #fff;
+    			text-align: center;
+			}
+
+			.btn_twenty{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				cursor: pointer;
+				font-size: 40px;
+    			color: #fff;
+    			text-align: center;
+			}
+
+			.btn_twentyone{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				cursor: pointer;
+				font-size: 40px;
+    			color: #fff;
+    			text-align: center;
+    			justify-content:center;
+				align-items:center;
+			}
+
+			.btn_twentytwo{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+				position: relative;
+				justify-content:center;
+				align-items:center;
+			}
+
+
+			.btn_twentythree{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+				transition: 1.5s;
+				}
+	
+			.btn_twentythree.selected {
+		  		background-color: yellow;
+		  		transform: rotate(90deg);
+				}
+
+			.box6.selected {
+		    	transform:rotate(90deg);
+		    	background-color: yellow;
+			}
+			.btn_twentyfour{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_twentyfive{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			#rec {
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			
+			    -webkit-transition: border-radius 1s, width 1s;
+			    transition: border-radius 1s, width 1s;
+			    cursor:pointer;
+				}
+				#rec.animate {
+				    border-radius:0%;
+				    width:300px;
+		}
+
+			 .btn_twentysix{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+				transition: 5s;
+				transition-timing-function: linear;
+
+			}
+
+			.btn_twentysix.selected {
+			  background-color: pink;
+			  animation-name: box;
+			  height: 400px;
+		}
+
+			.btn_twentyseven{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+				transition: 1s;
+				transition-timing-function: ease;
+			}
+
+			.btn_twentyseven.selected {
+				  background-color: pink;
+				  animation-name: box;
+				  width: 10px;
+				  height: 400px;
+			}
+
+			.btn_twentyeight{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+				transition: width 3s;
+				transition-delay: 1s;
+			}
+
+			.btn_twentyeight.selected {
+			  background-color: lightgreen;
+			  animation-name: box;
+			  width: 800px;
+			}
+
+			.btn_twentynine{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_thirty{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_thirtyone{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_thirtyone.selected {
+				font-size: 800px;
+				color: pink;
+			}
+
+			.btn_thirtytwo{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.popup {
+			    position: relative;
+			    display: inline-block;
+			    cursor: pointer;
+			    -webkit-user-select: none;
+			    -moz-user-select: none;
+			    -ms-user-select: none;
+			    user-select: none;
+			}
+
+			.popup .popuptext {
+			    visibility: hidden;
+			    width: 160px;
+			    background-color: #555;
+			    color: #fff;
+			    text-align: center;
+			    border-radius: 6px;
+			    padding: 8px 0;
+			    position: absolute;
+			    z-index: 1;
+			    bottom: 125%;
+			    left: 50%;
+			    margin-left: -80px;
+			}
+
+			.popup .popuptext::after {
+			    content: "";
+			    position: absolute;
+			    top: 100%;
+			    left: 50%;
+			    margin-left: -5px;
+			    border-width: 5px;
+			    border-style: solid;
+			    border-color: #555 transparent transparent transparent;
+			}
+
+			.popup .show {
+			    visibility: visible;
+			    -webkit-animation: fadeIn 1s;
+			    animation: fadeIn 1s;
+			}
+
+			@-webkit-keyframes fadeIn {
+    		from {opacity: 0;} 
+    		to {opacity: 1;}
+			}
+
+			@keyframes fadeIn {
+    		from {opacity: 0;}
+    		to {opacity:1 ;}
+			}
+
+			.btn_thirtythree{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+					
+
+			.btn_thirtyfour{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+
+			}
+
+
+			.btn_thirtyfive{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+    
+
+			.btn_thirtysix{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.spread{
+			letter-spacing: 20px;
+		}
+
+			.btn_thirtyseven{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+
+			}
+
+			.slowspread{
+			letter-spacing: 20px;
+			transition: all .9s ease-in-out;
+		}
+
+
+			.btn_thirtyeight{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+			.spreadclose{
+				letter-spacing: -5px;
+			
+		}
+
+			.btn_thirtynine{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+				text-decoration: none;
+			}
+
+		h3 {
+    	display: block;
+    	font-size: 40px;
+    	text-align: center;
+    	font-family: sans-serif;
+    	color:white;
+    	text-decoration: none;
+    	margin: auto;
+    	text-decoration: center;
+		}
+		h3:active {
+	    text-transform: lowercase;
+
+		}
+			.btn_forty{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_fortyone{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: pink;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+				transition-duration: .5s
+
+			}
+
+
+			.btn_fortytwo{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			h4{
+				text-align: center;
+				font-size: 40px;
+			}
+
+			.btn_fortythree{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			h5{
+				text-align: center;
+				font-size: 40px;
+			}
+			.btn_fortyfour{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_fortyfive{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_fortysix{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+			h6{
+				line-height: 60px;
+			}
+			.btn_fortyseven{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			
+
+			.btn_fortyeight{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_fortynine{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_fifty{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+				transition: all .9s ease-in-out;
+			}
+
+
+			.btn_fiftyone{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_fiftytwo{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_fiftythree{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_fiftyfour{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_fiftyfive{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			div.btn_fiftysix{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+				transition:transform 1s linear;
+				transform-origin:top left;
+				transform-style: preserve-3d;
+			
+			}
+
+		.spinEffect{
+			transform: rotate(360deg);
+			transform-origin:top left;
+			
+		}
+		.flex-rect { transition: all .9s ease-in-out; }
+				
+
+			.btn_fiftyseven{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_fiftyeight{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_fiftynine{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_sixty{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_sixtyone{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_sixtytwo{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_sixtythree{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_sixtyfour{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_sixtyfive{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_sixtysix{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_sixtyseven{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_sixtyeight{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_sixtynine{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_seventy{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_seventyone{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_seventytwo{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_seventythree{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_seventyfour{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_seventyfive{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_seventysix{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_seventyseven{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_seventyeight{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_seventynine{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_eighty{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_eightyone{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_eightytwo{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_eightythree{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_eightyfour{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_eightyfive{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_eightysix{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_eightyseven{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_eightyeight{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_eightynine{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_ninety{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_ninetyone{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_ninetytwo{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_ninetythree{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_ninetyfour{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_ninetyfive{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_ninetysix{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_ninetyseven{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_ninetyeight{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+			.btn_ninetynine{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+			 .btn_hundred{
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 40px;
+				cursor: pointer;
+			}
+
+				span {
+					color: pink;
+					background-color: #fff;
+			      	font-size: 40px;
+			      	display: inline-block;
+					}
+
+			#top{
+			position: bottom right;
+			float: bottom;
+			}
+
+			img{
+				height: 200px;
+				position: fixed;
+				right: 0;
+				top: 0;
+			}
+
+			div.pop-no{	
+			position: absolute; 
+  			cursor: pointer;
+  			left: 50%; 
+			top: 50%; 
+			transform: translate(-50%, -50%);
+			border-radius: 50%;
+			text-align: center;
+			z-index: 10;
+			font-family: sans-serif;
+			color:black;
+			font-size: 20px;
+			} 
+		.pop-no { transition: all 7s ease-in-out; }
+
+		</style>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	</head>
+
+	<body>
+		
+		<div id="main_content">
+			
+		<div class="btn_one"> 1 </div>
+				<script
+  				src="https://code.jquery.com/jquery-3.2.1.min.js"
+  				integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  				crossorigin="anonymous"></script>
+  				<script>
+				$( ".btn_one" ).click(function() {
+				console.log("hello")
+				$(this).css('background-color', 'pink');
+				});
+				</script>
+
+		<div class="btn_two"> 2 </div>
+				
+				<script>
+	        	$( ".btn_two" ).click(function() {
+	          	$(this).toggleClass("selected");
+	        	});
+				</script>
+				
+		<div class="btn_three"> 3 </div>
+				<script>
+	        	$( ".btn_three" ).click(function() {
+	          	$(this).toggleClass("selected");
+	        	});
+				</script>
+
+		<div class="btn_four"> 4 </div>
+				<script>
+	        	$( ".btn_four" ).click(function() {
+	        	$(this).toggleClass("selected");
+	        	});
+				</script>
+
+			<div class="btn_five"> 5 </div>
+				<script>
+	        	$( ".btn_five" ).click(function() {
+	          	$(this).toggleClass("selected");
+	        	});
+				</script>
+
+			<div class="btn_six"> 6 </div>
+				<script>
+	        	$( ".btn_six" ).click(function() {
+	          	$(this).toggleClass("selected");
+	        	});
+				</script>
+
+			<div class="btn_seven"> 7 </div>
+				<script>
+	        	$( ".btn_seven" ).click(function() {
+	          	$(this).toggleClass("selected");
+	        	});
+				</script>
+
+
+			<div class="btn_eight"> 8 </div>
+				<script>
+	        	$( ".btn_eight" ).click(function() {
+	        	$(this).toggleClass("selected");
+	        	});
+				</script>
+
+			<div class="btn_nine"> 9 </div>
+				<script>
+	        	$( ".btn_nine" ).click(function() {
+	          	$(this).toggleClass("selected");
+	        	});
+				</script>
+
+			<div class="btn_ten"> 10 </div>
+				<script>
+	        	$( ".btn_ten" ).click(function() {
+	          	$(this).toggleClass("selected");
+	        	});
+				</script>
+
+			<div class="btn_eleven"> 11 </div>
+				<script>
+	        	$( ".btn_eleven" ).click(function() {
+	          	$(this).toggleClass("selected");
+	        	});
+				</script>
+
+			<div class="btn_twelve"> 12 </div>
+				<script>
+	        	$( ".btn_twelve" ).click(function() {
+	          	$(this).toggleClass("selected");
+	        	});
+				</script>
+
+			<div class="btn_thirteen"> 13 </div>
+					<script>
+					$( ".btn_thirteen" ).click(function() {
+					$(this).toggleClass("selected");
+					});
+					</script>
+
+			<div class="btn_fourteen"> 14 </div>
+				<script>
+				$( ".btn_fourteen" ).click(function() {
+				$( this ).slideUp();
+				});
+				$( ".target" ).hide();
+				</script>
+
+			<div class="btn_fifteen"> 15 </div>
+				<script>
+	        	$( ".btn_fifteen" ).click(function() {
+	          	$(this).toggleClass("selected");
+	        	});
+				</script>
+
+			<div class="btn_sixteen"> 16 </div>
+				<script
+  				src="https://code.jquery.com/jquery-3.2.1.min.js"
+  				integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  				crossorigin="anonymous"></script>
+ 				 <script>
+				$( ".btn_sixteen" ).click(function() {
+				console.log("hello")
+				$(this).css('background-color', 'white');
+				});
+				</script>
+
+			<div class="btn_seventeen"> 17 </div>
+					<script>
+	        		$( ".btn_seventeen" ).click(function() {
+	          		$(this).toggleClass("selected");
+	       			});
+					</script>
+
+			<div class="btn_eighteen"> 18 </div>
+				<script>
+				$( ".btn_eighteen" ).click(function() {
+	  			$( this ).animate({
+	    		height: "40%",
+	    		opacity: 1,
+	    		marginLeft: "0.4in",
+	    		borderWidth: "10px"
+	  			}, 1500 );
+				});
+				$( "*" ).click(function() {
+				$( "this" ).toggle();
+				});
+				</script>
+			
+			<div class="btn_nineteen"> 19 </div>
+				<script>
+				$( ".btn_nineteen" ).click(function() {
+	  			$( this ).animate({
+			    width: "70%",
+			    height: "70%",
+			    opacity: 1,
+			    marginLeft: "0.4in",
+			    fontSize: "13em",
+			    borderWidth: "10px"
+			  	}, 2000 ); 
+				});
+				</script>
+			
+			<div class="btn_twenty"> 20 </div>
+				<script>
+				$( ".btn_twenty" ).click(function() {
+	  			$( this ).animate({
+	    		fontSize: "0.2em"
+	  			}, 2000 ); 
+				});
+				</script>
+			
+			<div class="btn_twentyone"> 21 </div>
+				<script>
+				$( ".btn_twentyone" ).click(function() {
+				var leng = Math.floor(10+ Math.random() * 500);
+				var widt = Math.floor(10+ Math.random() * 500);
+				$( this ).width( widt ).addClass( "morph" );
+				$( this ).height( leng ).addClass( "morph" );
+				console.log("hello");
+				});
+				</script>
+
+			<div class="btn_twentytwo"> 22 </div>
+				<script>
+				$( ".btn_twentytwo" ).click(function() {
+				var leng = Math.floor(10+ Math.random() * 500);
+				var widt = Math.floor(10+ Math.random() * 500);
+			 	$( this ).width( widt ).addClass( "morph" );
+			 	$( this ).height( leng ).addClass( "morph" );
+				console.log("hello");
+				var colorR = Math.floor((Math.random() * 256));
+	     		var colorG = Math.floor((Math.random() * 256));
+	     		var colorB = Math.floor((Math.random() * 256));
+				$(this).css("background-color", "rgb(" + colorR + "," + colorG + "," + colorB + ")");
+				});
+				</script>
+
+
+			<div class="btn_twentythree"> 23 </div>
+			 <script>
+			$( ".btn_twentythree" ).click(function() {
+	  		$(this).toggleClass("selected");
+			});
+			</script> 
+
+			<div class="btn_twentyfour"> 24 </div>
+				<script>
+				$( ".btn_twentyfour" ).click(function() {
+				$(this).css("background-color", getRandomColor());
+				});
+
+				function getRandomColor() {
+				var letters = '0123456789ABCDEF';
+				var color = '#F';
+				for (var i = 0; i < 5; i++) {
+				color += letters[Math.floor(Math.random() * 16)];
+				}
+				return color;
+				}
+				</script>
+
+			
+				<div id="rec">25</div>
+		
+				<script type="text/javascript">
+					$('div').click(function () {
+			    $(this).toggleClass('animate');
+			});
+				</script>
+
+			<div class="btn_twentysix"> 26 </div>
+			<script>
+	        $( ".btn_twentysix" ).click(function() {
+	          $(this).toggleClass("selected");
+	        });
+			</script>
+
+			<div class="btn_twentyseven"> 27 </div>
+				<script>
+	        	$( ".btn_twentyseven" ).click(function() {
+	          	$(this).toggleClass("selected");
+	        	});
+				</script>
+
+			<div class="btn_twentyeight"> 28 </div>
+				<script>
+	        	$( ".btn_twentyeight" ).click(function() {
+	          	$(this).toggleClass("selected");
+	        	});
+				</script>
+
+			<div class="btn_twentynine"> 29 </div>
+				<script>
+				$( ".btn_twentynine" ).click(function() {
+				var size = Math.floor(10+ Math.random() * 200);
+			 	$(this).css('font-size', size);
+				});
+				</script>
+
+			<div class="btn_thirty"> 30 </div>
+				<script>
+				$( ".btn_thirty" ).click(function() {
+				var size = Math.floor(10+ Math.random() * 5);
+			 	$(this).css('font-size', size);
+				});
+				</script>
+
+			<div class="btn_thirtyone"> 31 </div>
+				<script>
+				$( ".btn_thirtyone" ).click(function() {
+	          	$(this).toggleClass("selected");
+	        	});
+				</script>
+
+			<div class="btn_thirtytwo"> <div class="popup" onclick="myFunction()"> ___
+  				<span class="popuptext" id="myPopup">32!</span>
+				</div> </div>
+
+				<script>
+				function myFunction() {
+    			var popup = document.getElementById("myPopup");
+    			popup.classList.toggle("show");
+				}
+				</script>
+
+			<div class="btn_thirtythree"> <k> 33 </k> </div>
+				<script type="text/javascript">
+
+				$("k").click(function(){
+						$ (this) .animate({
+							opacity: 0,
+							height: "800px",
+
+				
+						});
+					});
+
+				</script>
+
+			<div class="btn_thirtyfive"> <button id="button"> click </button> </div>
+
+			 <input class="btn_thirtyfive" value="35" onmouseover="btn_thirtyfour=Math.random()*1000+event.clientX/4+'px'; this.style.marginTop=Math.random()*1000+event.clientY/4+'px';" type="button">
+
+			
+			<div class="btn_thirtysix"> <p>36</p> </div>
+				<script type="text/javascript">
+				$("p").click(function(){
+				$(this).addClass("spread");
+				});
+				</script>
+				
+			<div class="btn_thirtyseven"> <d1> 37 </d1> </div>
+				<script type="text/javascript">
+				$("d1").click(function(){
+				$(this).addClass("slowspread");
+				});
+		
+				</script>
+
+
+			<div class="btn_thirtyeight"> <d2> 38 </d2> </div>
+				<script type="text/javascript">
+				$("d2").click(function(){
+				$(this).toggleClass("spreadclose");
+				});
+	
+				</script>
+
+			<div class="btn_thirtynine"> <h3>HI</h3> </div>
+				
+			<div class="btn_forty"> <button onclick="myFunction2()">click</button> </div>
+
+				<script>
+				function myFunction2() {
+				    alert("40");
+				}
+				</script>
+
+
+			<div class="btn_fortyone"> <d4>41 </d4> </div>
+				<script type="text/javascript">			
+				$("d4").click(function(){
+				var size = Math.floor(20+Math.random()*400);
+				$(this).css('font-size', size);
+				})
+				</script>
+
+			<<div class="btn_fortytwo"> 42 </div>
+	<h4>This is number 42</h4>
+				<script type="text/javascript">
+					$(document).ready(function(){
+			    		$(".btn_fortytwo").click(function(){
+			      			$("h4").animate({wordSpacing: "-=15px"});
+			   		});
+			    	
+					});
+				</script>
+
+			<div class="btn_fortythree"> 43 </div>
+	
+	<h5>This is number 43</h5>
+	<script type="text/javascript">
+		$(document).ready(function(){
+    		$(".btn_fortythree").click(function(){
+      			$("h5").animate({wordSpacing: "+=15px"});
+   		
+    	});
+		});
+	</script>
+	
+
+			<div class="btn_fortyfour"> 44 </div>
+			<h6>This is number 44. This is number 44. This is number 44. This is number 44. This is number 44. This is number 44. This is number 44. This is number 44. This is number 44. This is number 44. This is number 44. This is number 44. This is number 44. This is number 44. This is number 44. This is number 44. This is number 44. This is number 44. This is number 44. This is number 44. This is number 44. This is number 44. This is number 44. This is number 44. This is number 44. This is number 44. This is number 44. This is number 44. This is number 44. This is number 44. This is number 44. This is number 44. This is number 44.</h6>
+	<script type="text/javascript">
+		$(document).ready(function(){
+    		$(".btn_fortyfour").click(function(){
+      			$("h6").animate({lineHeight: "-=2em"});
+   		});
+    	
+		});
+	</script>
+				
+			<div class="btn_fortyfive"> 45 </div>
+			<h6>This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. </h6>
+	<script type="text/javascript">
+		$(document).ready(function(){
+    		$(".btn_fortyfive").click(function(){
+      			$("h7").animate({textIndent: "40px"});
+   		});
+    	
+		});
+	</script>
+	
+
+			<div class="btn_fifty"> <button id="hide">Hide</button>
+				<img id="teddy" src="teddy.jpg"></img></div>
+				<script>
+				$(document).ready(function(){
+				    $("#hide").click(function(){
+				        $("img").hide();
+				    });
+				    $("#show").click(function(){
+				        $("img").show();
+				    });
+				});
+				</script>
+
+			
+			<div class="btn_fiftyone">
+				<button id="show">Show</button> </div>
+				<script>
+				$(document).ready(function(){
+				    $("#hide").click(function(){
+				        $("img").hide();
+				    });
+				    $("#show").click(function(){
+				        $("img").show();
+				    });
+				});
+				</script>
+			
+			<div class="btn_fiftytwo">
+				<button class="btn1">Fade Out</button> </div>
+				<script>
+
+				$( ".btn1" ).click(function() {
+  				$( "#teddy" ).fadeOut( "slow", function() {
+ 				 });
+				});
+				$( ".btn2" ).click(function() {
+  				$( "#teddy" ).fadeIn( "slow", function() {
+  				});
+				});
+				</script>
+
+			<div class="btn_fiftythree">
+				<button class="btn2">Fade In</button> </div>
+				<script>
+				$( ".btn1" ).click(function() {
+				  $( "#teddy" ).fadeOut( "slow", function() {  
+				  });
+				});
+				$( ".btn2" ).click(function() {
+				  $( "#teddy" ).fadeIn( "slow", function() {
+				  });
+				});
+				</script>
+
+			<div class="btn_fiftyfour"> <button id="btn1" onclick="openWin()">		"newpage"</button> </div>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+				<script>
+				var newpage;
+
+				function openWin() {
+				    newpage = window.open("", "newpage", "width=60,height=60");
+				    newpage.document.write("<p>hello</p>");
+				}
+
+				function closeWin() {
+				    newWindow.close();
+				}
+				</script>
+				
+			<div class="btn_fiftyfive"> <button id="btn2" onclick="closeWin()">Close "newpage"</button> </div>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+				<script>
+				var newpage;
+
+				function openWin() {
+				    newpage = window.open("", "newpage", "width=60,height=60");
+				    newpage.document.write("<p>hello</p>");
+				}
+
+				function closeWin() {
+				    newWindow.close();
+				}
+				</script>
+
+			  <div class="btn_fiftysix"> 52 </div>
+			  <script type="text/javascript">
+				$(function(){
+			  	$("div.btn_fiftysix").click(function(){
+			 
+			    $("div.btn_fiftysix").toggleClass("spinEffect");
+			  	});
+				});
+				</script>
+
+			<div class="btn_ninetynine">  
+			<button id="top">Scroll to top</button>
+		</div>
+
+	<script type="text/javascript">
+
+	$ (document).ready(function(){
+		$("#top").on('click', function(){
+			$("HTML, BODY").animate({
+				scrollTop:0
+			},1000);	
+		});
+		
+	});
+
+	</script>
+
+			<div class="btn_hundred"> 
+			<button id="click">Bye!</button>
+			 </div>
+			<script>
+			$( "#click" ).click(function() {
+	  		$( "div" ).hide( "fast", function() {
+	    	$( this ).prev().hide( "fast", arguments.callee );
+	  		});
+	  		});
+			</script>
+
+			<div class="btn_fortysix"> sorry :/ </div>
+
+	
+				
+		
+				
+			</div>	
+
+	</body>
+</html>
