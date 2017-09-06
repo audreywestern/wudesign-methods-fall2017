@@ -1021,6 +1021,10 @@
 				cursor: pointer;
 			}
 
+			.btn_fortyfive:active {
+	text-decoration: underline;
+}
+
 			.btn_fortysix{
 				display: block;
 				width: 100px;
@@ -1311,6 +1315,10 @@
 				cursor: pointer;
 			}
 
+			.btn_sixtytwo:active {
+				text-shadow: 2px 2px 5px white; 		
+			}
+
 			.btn_sixtythree{
 				display: block;
 				width: 100px;
@@ -1327,6 +1335,10 @@
 				cursor: pointer;
 			}
 
+			.btn_sixtythree:active {
+				font-family: 'comic sans-serif', sans-serif;
+				}
+
 			.btn_sixtyfour{
 				display: block;
 				width: 100px;
@@ -1339,9 +1351,15 @@
 				background-color: #232f3e;
 				color: #fff;
 				text-align: center;
-				font-size: 40px;
+				font-size: 30px;
 				cursor: pointer;
 			}
+
+			.btn_sixtyfour:active {
+	font-size: 30px;
+	color: #232f3e;
+	background: repeating-radial-gradient(pink, white 10%, #232f3e 15%);
+}
 
 			.btn_sixtyfive{
 				display: block;
@@ -1355,8 +1373,15 @@
 				background-color: #232f3e;
 				color: #fff;
 				text-align: center;
-				font-size: 40px;
+				font-size: 30px;
 				cursor: pointer;
+			}
+
+			.btn_sixtyfive:active {
+				border-radius: 50%;
+				max-height: 200px;
+				max-width: 200px;
+				background: radial-gradient(circle, purple, #232f3e, pink); 
 			}
 
 			.btn_sixtysix{
@@ -1371,9 +1396,14 @@
 				background-color: #232f3e;
 				color: #fff;
 				text-align: center;
-				font-size: 40px;
+				font-size: 30px;
 				cursor: pointer;
 			}
+
+			.btn_sixtysix:active {
+				 background: linear-gradient(to right, #DB7093 , #232f3e); 
+			}
+
 
 			.btn_sixtyseven{
 				display: block;
@@ -1389,6 +1419,11 @@
 				text-align: center;
 				font-size: 40px;
 				cursor: pointer;
+			}
+
+			.slowShrink {
+				transform: scale(0);
+				transition: all 5s ease;
 			}
 
 			.btn_sixtyeight{
@@ -1952,7 +1987,61 @@
 			} 
 		.pop-no { transition: all 7s ease-in-out; }
 
+
+	.scared{
+		 
+		width: 300px;
+	height: 300px; 
+		-webkit-animation: shake 0.5s infinite linear;
+     animation: shake 0.5s infinite linear;
+     transition: 0.6s;
+	}
+
+		.expand{
+		width: 600px;
+	height: 600px; 
+     transition: 0.6s;
+	}
+
+	@keyframes  spin {
+       0%  {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}  }
+
+
+	@keyframes shake {
+	  10%, 90% {
+	    transform: translate3d(-2px, 0, 0);
+	  }
+
+	  20%, 80% {
+	    transform: translate3d(4px, 0, 0);
+	  }
+
+	  30%, 50%, 70% {
+	    transform: translate3d(-7px, 0, 0);
+	  }
+
+	  40%, 60% {
+	    transform: translate3d(7px, 0, 0);
+	  }
+	}
+
+	@keyframes escape {
+	  100% {
+    transform: translate(5000px, 0px);
+	  }
+	}
+
+		@keyframes expand {
+	  100% {
+    transform: translate(5000px, 0px);
+	  }
+	}
+
+
 		</style>
+
+
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	</head>
 
@@ -2342,16 +2431,10 @@
 	</script>
 				
 			<div class="btn_fortyfive"> 45 </div>
-			<h6>This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. This is number 45. </h6>
-	<script type="text/javascript">
-		$(document).ready(function(){
-    		$(".btn_fortyfive").click(function(){
-      			$("h7").animate({textIndent: "40px"});
-   		});
-    	
-		});
-	</script>
-	
+			
+			<div class="btn_sixtytwo"> 46 </div>
+
+			<div class="btn_sixtythree"> 47 </div>
 
 			<div class="btn_fifty"> <button id="hide">Hide</button>
 				<img id="teddy" src="teddy.jpg"></img></div>
@@ -2437,7 +2520,7 @@
 				}
 				</script>
 
-			  <div class="btn_fiftysix"> 52 </div>
+			  <div class="btn_fiftysix"> 54 </div>
 			  <script type="text/javascript">
 				$(function(){
 			  	$("div.btn_fiftysix").click(function(){
@@ -2451,22 +2534,17 @@
 			<button id="top">Scroll to top</button>
 		</div>
 
-	<script type="text/javascript">
+			<script type="text/javascript">
 
-	$ (document).ready(function(){
-		$("#top").on('click', function(){
-			$("HTML, BODY").animate({
-				scrollTop:0
-			},1000);	
-		});
-		
-	});
+			$ (document).ready(function(){
+				$("#top").on('click', function(){
+					$("HTML, BODY").animate({
+						scrollTop:0
+					},1000);	
+				});	
+			});
+			</script>
 
-	</script>
-
-			<div class="btn_hundred"> 
-			<button id="click">Bye!</button>
-			 </div>
 			<script>
 			$( "#click" ).click(function() {
 	  		$( "div" ).hide( "fast", function() {
@@ -2475,13 +2553,87 @@
 	  		});
 			</script>
 
-			<div class="btn_fortysix"> sorry :/ </div>
+			<div class="btn_fortysix"> 	<iframe width="340" height="160" src="https://www.youtube.com/embed/60D2Ou-GrRk" frameborder="0" allowfullscreen></iframe> </div>
+		
+<div class="btn_fiftyseven"> <button onclick="window.location.href='http://www.ezanga.com/images/icons/clicks-hover.png'"> 57 </button> </div>
+		
+		 <div class="btn_fiftyeight"> Thanks Ed! </div>
+			<script>
+			$( '.btn_fiftyeight' ).click(function() {
+			 
+			 $(".btn_fiftyeight").toggleClass("expand"); 
+			 var colorR = Math.floor((Math.random() * 256));
+	     	var colorG = Math.floor((Math.random() * 256));
+	     	var colorB = Math.floor((Math.random() * 256));
+	     	$(".btn_fiftyeight").css("background", "rgb(" + colorR + "," + colorG + "," + colorB + ")");
+		
+	});
 
-	
-				
+	$('*').on('click', function(event){
+		console.log(event);
+	});
+</script>
+
+ <div class="btn_fiftynine"> 59 </div>
+			<script>
+			$( '.btn_fiftynine' ).click(function() {
+			 $(".btn_fiftynine").toggleClass("scared"); 	
+	});
+
+	$('*').on('click', function(event){
+		console.log(event);
+	});
+</script>
+
+
+ <div class="btn_sixty"> 60 </div>
+			<script>
+						$( '.btn_sixty' ).click(function() {
+						 $(".btn_sixtyone").toggleClass("scared"); 	
+				});
+
+				$('*').on('click', function(event){
+					console.log(event);
+				});
+			</script>
+
+<div class="btn_sixtyone"> 61 </div>
+
+		<script>
+			$( '.btn_sixtyone' ).click(function() {
+			 
+			 $(".btn_sixty").toggleClass("expand"); 
+			 var colorR = Math.floor((Math.random() * 256));
+	     	var colorG = Math.floor((Math.random() * 256));
+	     	var colorB = Math.floor((Math.random() * 256));
+	     	$(".btn_fiftyeight").css("background", "rgb(" + colorR + "," + colorG + "," + colorB + ")");
+		
+			});
+
+			$('*').on('click', function(event){
+				console.log(event);
+			});
+		</script>
+
+
+<div class="btn_sixtyfour"> Thanks Claire </div>
+
+<div class="btn_sixtyfive"> Thanks Claire </div>
+
+<div class="btn_sixtysix"> Thanks Claire </div>
+
+<div class="btn_sixtyseven"> 65 </div>
+
+		
+
+
+<div class="btn_hundred"> 
+			<button id="click">Bye!</button>
+			 </div>
 		
 				
 			</div>	
+
 
 	</body>
 </html>
