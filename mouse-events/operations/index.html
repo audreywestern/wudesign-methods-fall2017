@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Generation</title>
+	
+<style type="text/css">
+html,body {
+	margin: 0;
+    height: 100%;
+    position: relative;
+    font-family: 'times';
+    font-weight: bold;
+    font-size: 75px;
+    left: 3%;
+    top: 3%;
+	}
+
+	div {
+		 position: absolute;             
+   		top: 10%;  
+   		font-size: 75px;                     
+		font-family: 'times';
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.default{
+	font-family: 'times';
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 200;
+	}
+
+	.morph{
+		font-size: 75px;
+		background: blue;
+    	cursor: pointer;
+    	transition: 0.2s;
+
+	}
+
+</style>
+<body>
+<div class="default" id="gener">
+	Generation, Manipulation, Randomization, or Iteration <br><br>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script>
+	$( "div" ).click(function() {
+		
+		 var colorR = Math.floor((Math.random() * 256));
+	     	var colorG = Math.floor((Math.random() * 256));
+	     	var colorB = Math.floor((Math.random() * 256));
+	     	var size = Math.floor(20+Math.random()*100);
+
+		 $(this).css('color', "rgb(" + colorR + "," + colorG + "," + colorB + ")");
+		$(this).css('font-size', size);
+
+	var t = document.createTextNode("MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE MORE ");
+    document.getElementById("gener").appendChild(t);
+	});
+
+	function myFunction() {
+		var x = document.getElementById("myPsw").value;
+   
+}
+</script>
+</body>
+</html>
