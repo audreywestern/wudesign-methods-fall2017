@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Idea1</title>
+		<link> 
+		<style>
+
+        .white {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 0%;
+  left: 0%;
+  background:  #ffcc66;
+  z-index: 50;
+  transition: width 0.25s ease-in-out, height 0.25s ease-in-out, top 0.25s ease-in-out, left 0.25s ease-in-out, z-index 0.25s ease-in-out;
+  cursor: pointer;
+}
+.white:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background:  #ffe6b3;
+  border-radius: 50%;
+}
+.white:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  border: 10px solid  #ffe6b3;
+  border-radius: 50%;
+  transition: width 0.15s ease-in-out, height 0.15s ease-in-out;
+}
+.white:hover:after {
+  width: 70px;
+  height: 70px;
+}
+
+.yellow {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 0%;
+  left: 50%;
+  background:  #ff9999;
+  z-index: 50;
+  transition: width 0.25s ease-in-out, height 0.25s ease-in-out, top 0.25s ease-in-out, left 0.25s ease-in-out, z-index 0.25s ease-in-out;
+  cursor: pointer;
+}
+.yellow:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: #fc5556;
+  border-radius: 50%;
+}
+.yellow:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  border: 10px solid #fc5556;
+  border-radius: 50%;
+  transition: width 0.15s ease-in-out, height 0.15s ease-in-out;
+}
+.yellow:hover:after {
+  width: 70px;
+  height: 70px;
+}
+
+.red {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 0%;
+  background:  #009999;
+  z-index: 50;
+  transition: width 0.25s ease-in-out, height 0.25s ease-in-out, top 0.25s ease-in-out, left 0.25s ease-in-out, z-index 0.25s ease-in-out;
+  cursor: pointer;
+}
+.red:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background:  #006666;
+  border-radius: 50%;
+}
+.red:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  border: 10px solid   #006666;
+  border-radius: 50%;
+  transition: width 0.15s ease-in-out, height 0.15s ease-in-out;
+}
+.red:hover:after {
+  width: 70px;
+  height: 70px;
+}
+
+.blue {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  background:   #5c5cd6;
+  z-index: 50;
+  transition: width 0.25s ease-in-out, height 0.25s ease-in-out, top 0.25s ease-in-out, left 0.25s ease-in-out, z-index 0.25s ease-in-out;
+  cursor: pointer;
+}
+.blue:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background:   #d6d6f5;
+  border-radius: 50%;
+}
+.blue:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  border: 10px solid   #d6d6f5;
+  border-radius: 50%;
+  transition: width 0.15s ease-in-out, height 0.15s ease-in-out;
+}
+.blue:hover:after {
+  width: 70px;
+  height: 70px;
+}
+
+.click {
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.topright {
+  top: 0%;
+  left: 0%;
+}
+
+.topleft {
+  top: 0%;
+  left: 50%;
+}
+
+.bottomright {
+  top: 50%;
+  left: 0%;
+}
+
+.bottomleft {
+  top: 50%;
+  left: 50%;
+}
+</style>
+	</head>
+		<body>
+
+<div class='white go'></div>
+<div class='yellow go'></div>
+<div class='red go'></div>
+<div class='blue go'></div>
+
+
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    $(".go").click(function() {
+  if ($(this).hasClass("click")) shuffle();
+  else $(this).removeClass("bottomright topleft topright bottomleft");
+  $(this).toggleClass("click");
+});
+
+function shuffle() {
+  var nrs = [1, 2, 3, 4];
+
+  for (var i = 1; i < 5; i++) {
+    var nr = Math.floor(Math.random() * nrs.length);
+    switch (nrs[nr]) {
+      case 1:
+        move(i, "topright", nrs, nr);
+        break;
+
+      case 2:
+        move(i, "topleft", nrs, nr);
+        break;
+
+      case 3:
+        move(i, "bottomright", nrs, nr);
+        break;
+
+      case 4:
+        move(i, "bottomleft", nrs, nr);
+        break;
+
+      default:
+        alert("miss " + nrs[nr]);
+    }
+  }
+}
+
+function move(i, where, nrs, nr) {
+  $(".go:nth-child(" + i + ")").removeClass(
+    "topright topleft bottomright bottomleft"
+  );
+  $(".go:nth-child(" + i + ")").addClass(where);
+  nrs.splice(nr, 1);
+}
+
+setTimeout(function() {
+  shuffle();
+}, 300);
+setTimeout(function() {
+  shuffle();
+}, 700);
+setTimeout(function() {
+  shuffle();
+}, 1100);
+setTimeout(function() {
+  shuffle();
+}, 1500);
+
+</script>
+
+
+
+		</body>
+</html>
