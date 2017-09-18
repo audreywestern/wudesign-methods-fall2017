@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        
+    </title>
+
+
+    <style type="text/css">
+        body {
+    background: #F8F4E3;
+}
+
+    </style>
+</head>
+<body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mo-js/0.288.1/mo.min.js"></script>
+<script src="https://cdn.jsdelivr.net/mojs-player/0.43.15/mojs-player.min.js"></script>
+
+<script type="text/javascript">
+    const OPTS = {
+    fill:        'none',
+    radius:      200,
+    strokeWidth: { 45 : 0 },
+    scale:       { 0: 1 },
+    angle:       { 'rand(-35, -70)': 0 },
+    duration:    5000,
+    left:        0,
+    top:         0,
+    easing:      'cubic.out'
+};
+
+
+
+const circle1 = new mojs.Shape({
+    ...OPTS,
+    stroke: '#ffcc99',
+});
+
+const circle2 = new mojs.Shape({
+    ...OPTS,
+    radius:      { 0 : 150 },
+    strokeWidth: { 25: 0 },
+    stroke:      '#ff9966',
+    delay:       'rand(75, 150)'
+});
+
+const circle3 = new mojs.Shape({
+    ...OPTS,
+    radius:      { 0 : 50 },
+    strokeWidth: { 0: 10 },
+    stroke:      '#ff9999',
+    delay:       'rand(75, 150)'
+});
+
+document.addEventListener( 'click', function (e) {
+    circle1
+        .tune({ x: e.pageX, y: e.pageY  })
+        .replay();
+
+    circle2
+        .tune({ x: e.pageX, y: e.pageY  })
+        .replay();
+
+    circle3
+        .tune({ x: e.pageX, y: e.pageY  })
+        .replay();
+});
+
+
+</script>
+
+
+</body>
+</html>

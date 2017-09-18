@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3</title>
+</head>
+<style type="text/css">
+	*{box-sizing: border-box; }
+
+:root{
+  --color1: pink;
+  --color2: var(--color1);
+  --medida: 150px;
+  --distanciaseudos: calc( var(--medida)*1.5 ) ;
+  --medida2: calc( var(--medida) / 1.5 ) ;
+  --sombra: calc( var(--medida) / 20 ) ;  
+  --distanciasombra: calc( var(--medida)*3 ) ;
+  --distanciasombra2: calc( var(--medida)*-3 ) ;
+
+}
+
+body{
+  text-align: center; 
+  background-color: black; 
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+section.container {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 500px;
+  width: 500px;
+  background: black;
+  -webkit-filter: blur(10px) contrast(30);
+          filter: blur(10px) contrast(30);
+}
+
+.circle{
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: var(--medida);
+  width: var(--medida);
+  border-radius: 50%;
+  background-color: var(--color1);
+  -webkit-animation: mueve-loop 10s infinite ease;
+          animation: mueve-loop 10s infinite ease;
+  box-shadow: 
+    0 0 var(--sombra) 0 white,
+    var(--distanciasombra) 0 0 0 white;
+}
+
+.circle.selected {
+            border-radius: 100px; 
+            transform: scale(2,2);
+          }
+
+
+.circle::before,
+.circle::after{
+  height: var(--medida2);
+  width: var(--medida2);
+  content: '';
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: absolute;
+  background-color: var(--color2);
+  border-radius: 50%;
+}
+
+.circle::before{
+  -webkit-transform: translateX( var(--distanciaseudos) );
+          transform: translateX( var(--distanciaseudos) );
+}
+.circle::before.selected {
+            border-radius: 100px; 
+            transform: scale(2,2);
+          }
+.circle::after{
+  -webkit-transform: translateX( calc(var(--distanciaseudos) * -100 ));
+          transform: translateX( calc(var(--distanciaseudos) * -1 ));
+}
+
+.circle::after.selected {
+            border-radius: 100px; 
+            transform: scale(,2);
+          }
+
+@-webkit-keyframes mueve-loop{
+  0%    {
+    box-shadow: 
+    0 0 var(--sombra) 0 orange,
+    var(--distanciasombra) 0 0 0 pink;
+  }
+  500%  {
+    box-shadow: 
+    0 0 var(--sombra) 0 orange,
+    var(--distanciasombra2) 0 0 0 pink;}
+}
+
+@keyframes mueve-loop{
+  0%    {
+    box-shadow: 
+    0 0 var(--sombra) 0 orange,
+    var(--distanciasombra) 0 0 0 pink;
+  }
+  50%  {
+    box-shadow: 
+    0 0 var(--sombra) 0 orange,
+    var(--distanciasombra2) 0 0 0 pink;}
+}
+
+p {
+  font-size: 12px;
+  color: white;
+}
+</style>
+<body>
+
+<p>Trying to figure out how to change colors every transition..? <p>
+<section class="container">
+
+  <div class="circle"></div>
+
+</section>
+</body>
+</html>
