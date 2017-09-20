@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Text2</title>
+
+</head>
+
+<style type="text/css">
+	*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  width: 100%;
+  font-family: "Cutive Mono", monospace;
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: normal;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+}
+
+.sep {
+  border: 0;
+  width: 3em;
+  height: 1px;
+  margin: 1em 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+}
+
+.mast {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  background-color:  background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
+  text-decoration: none;
+}
+.mast:after {
+  z-index: 0;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+  text-decoration: none;
+}
+.mast > header {
+  z-index: 2;
+  position: relative;
+  text-decoration: none;
+}
+.mast__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: 50%;
+  text-decoration: none;
+}
+.mast__header {
+  padding: 5%;
+  text-decoration: none;
+}
+.mast__title {
+  font-family: "Cutive Mono", monospace;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.mast__title:hover {
+
+  text-decoration: none;
+}
+
+.mast__text {
+  font-family: "Cutive Mono", monospace;
+  font-size: .7em;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  
+  text-decoration: none;
+}
+
+.mast__title:hover {
+
+  text-decoration: none;
+}
+
+@keyframes letter-glow {
+  0% {
+    opacity: 0;
+    
+  }
+  0% {
+    opacity: 1;
+    
+  }
+  0% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0.7;
+    text-shadow: rgba(255, 255, 255, 0);
+  }
+}
+a:link {
+	text-decoration: none;
+	color: white;
+}
+
+a:visited {
+	text-decoration: none;
+	color: white;
+}
+</style>
+
+<body>
+
+	<main>
+  <section class="mast">
+    
+    <header class="mast__header">
+    <a href="untitled_4.html"><h1 class="mast__title js-spanize">Sound Archive</h1>
+      <hr class="sep" /></a>
+     
+      
+<a href="untitled_4.html"><p class="mast__text js-spanize">
+        A TIMELINE OF LISTENING</p></a>
+        
+    </header>
+  </section>
+</main>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script type="text/javascript">
+	/*-----
+Spanizer
+- Wraps letters with spans, for css animations
+-----*/
+(function($) {
+  var s,
+    spanizeLetters = {
+      settings: {
+        letters: $(".js-spanize")
+      },
+      init: function() {
+        s = this.settings;
+        this.bindEvents();
+      },
+      bindEvents: function() {
+        s.letters.html(function(i, el) {
+          //spanizeLetters.joinChars();
+          var spanizer = $.trim(el).split("");
+          return "<span>" + spanizer.join("</span><span>") + "</span>";
+        });
+      }
+    };
+  spanizeLetters.init();
+})(jQuery);
+
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
