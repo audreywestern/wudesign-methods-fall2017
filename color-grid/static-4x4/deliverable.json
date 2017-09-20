@@ -2,19 +2,19 @@
   "entrypoints" : [
     {
       "name" : "1",
-      "file" : "intro.html"
+      "file" : "index1.html"
     },
     {
       "name" : "2",
-      "file" : "untitled_4.html"
+      "file" : "index2.html"
     },
     {
       "name" : "3",
-      "file" : "more.html"
+      "file" : "index3.html"
     },
     {
       "name" : " 4",
-      "file" : "more_2.html"
+      "file" : "index4.html"
     },
     
   ]
