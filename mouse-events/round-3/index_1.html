@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+<head></head>
+
+<style type="text/css">
+	html, body {
+	height: 100%;
+}
+
+.shape {
+	background-color: orange;
+	width: 60%;
+	margin-left: 20%;
+	margin-top: 10%;
+	position: relative;
+	height: 60%;
+}
+
+
+.shape_two {
+	background-color: pink;
+	width: 450px;
+	margin-left: 30%;
+	margin-top: 10%;
+	position: absolute;
+	height: 450px;
+}
+
+.animated {
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+.bounce {
+  animation-name: bounce;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-30px);}
+  60% {transform: translateY(-15px);}
+}
+
+.flash {
+  animation-name: flash;
+}
+
+@keyframes flash {
+  0%, 50%, 100% {opacity: 1;}
+  25%, 75% {opacity: 0;}
+}
+</style>
+
+<body style="background-color: white">
+
+ <div class="shape_two" style="background-color: white; border-radius: 5px;"> <a href="index_5.html"> figuring out the click action </a> </div>
+
+
+<script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+
+<script> 
+
+
+$(document).ready(function(){
+
+	$("body").click(function(){
+
+   		
+		$(".shape_two").css({
+		"box-shadow": "0px 0px 400px 1000px hsl(750, 100%, 63%)",	
+		"border-radius": "8000px",
+		"transition": "20s",
+
+
+
+		});
+
+
+		$("body").css({
+        	"background-color": "white",
+        	"transition": "8s",
+        	"transition-delay": "1s"
+        	
+        });
+	});	
+	
+});	
+</script>
+
+
+
+
+</body>
+</html>
+

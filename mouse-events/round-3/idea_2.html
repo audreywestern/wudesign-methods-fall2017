@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>idea 15</title>
+</head>
+<style type="text/css">
+	* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+.container .box {
+  display: inline-block;
+  vertical-align: top;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  margin: 0px;
+  position: relative;
+  overflow: hidden;
+  animation: background 4s ease infinite;
+}
+.container .box:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  border-radius: 50%;
+  background: #f5a38d;
+  border: 3px solid white;
+  transform: scale(0);
+  animation: circle 4s ease infinite;
+}
+.container .box:nth-of-type(even) {
+  background-color: #e6f2ff;
+  animation: backgroundalt 4s ease infinite;
+}
+.container .box:nth-of-type(even):after {
+  background: #89d3d5;
+  animation: circlealt 4s ease infinite;
+}
+.container .box1 {
+  animation-delay: 0.1s;
+}
+.container .box1:after {
+  animation-delay: 0.1s;
+}
+.container .box1:nth-of-type(even) {
+  animation-delay: 0.1s;
+}
+.container .box1:nth-of-type(even):after {
+  animation-delay: 0.1s;
+}
+.container .box2 {
+  animation-delay: 0.2s;
+}
+.container .box2:after {
+  animation-delay: 0.2s;
+}
+.container .box2:nth-of-type(even) {
+  animation-delay: 0.2s;
+}
+.container .box2:nth-of-type(even):after {
+  animation-delay: 0.2s;
+}
+.container .box3 {
+  animation-delay: 0.3s;
+}
+.container .box3:after {
+  animation-delay: 0.3s;
+}
+.container .box3:nth-of-type(even) {
+  animation-delay: 0.3s;
+}
+.container .box3:nth-of-type(even):after {
+  animation-delay: 0.3s;
+}
+.container .box4 {
+  animation-delay: 0.4s;
+}
+.container .box4:after {
+  animation-delay: 0.4s;
+}
+.container .box4:nth-of-type(even) {
+  animation-delay: 0.4s;
+}
+.container .box4:nth-of-type(even):after {
+  animation-delay: 0.4s;
+}
+.container .box5 {
+  animation-delay: 0.5s;
+}
+.container .box5:after {
+  animation-delay: 0.5s;
+}
+.container .box5:nth-of-type(even) {
+  animation-delay: 0.5s;
+}
+.container .box5:nth-of-type(even):after {
+  animation-delay: 0.5s;
+}
+.container .box6 {
+  animation-delay: 0.6s;
+}
+.container .box6:after {
+  animation-delay: 0.6s;
+}
+.container .box6:nth-of-type(even) {
+  animation-delay: 0.6s;
+}
+.container .box6:nth-of-type(even):after {
+  animation-delay: 0.6s;
+}
+.container .box7 {
+  animation-delay: 0.7s;
+}
+.container .box7:after {
+  animation-delay: 0.7s;
+}
+.container .box7:nth-of-type(even) {
+  animation-delay: 0.7s;
+}
+.container .box7:nth-of-type(even):after {
+  animation-delay: 0.7s;
+}
+.container .box8 {
+  animation-delay: 0.8s;
+}
+.container .box8:after {
+  animation-delay: 0.8s;
+}
+.container .box8:nth-of-type(even) {
+  animation-delay: 0.8s;
+}
+.container .box8:nth-of-type(even):after {
+  animation-delay: 0.8s;
+}
+.container .box9 {
+  animation-delay: 0.9s;
+}
+.container .box9:after {
+  animation-delay: 0.9s;
+}
+.container .box9:nth-of-type(even) {
+  animation-delay: 0.9s;
+}
+.container .box9:nth-of-type(even):after {
+  animation-delay: 0.9s;
+}
+.container .box10 {
+  animation-delay: 1s;
+}
+.container .box10:after {
+  animation-delay: 1s;
+}
+.container .box10:nth-of-type(even) {
+  animation-delay: 1s;
+}
+.container .box10:nth-of-type(even):after {
+  animation-delay: 1s;
+}
+.container .box11 {
+  animation-delay: 1.1s;
+}
+.container .box11:after {
+  animation-delay: 1.1s;
+}
+.container .box11:nth-of-type(even) {
+  animation-delay: 1.1s;
+}
+.container .box11:nth-of-type(even):after {
+  animation-delay: 1.1s;
+}
+.container .box12 {
+  animation-delay: 1.2s;
+}
+.container .box12:after {
+  animation-delay: 1.2s;
+}
+.container .box12:nth-of-type(even) {
+  animation-delay: 1.2s;
+}
+.container .box12:nth-of-type(even):after {
+  animation-delay: 1.2s;
+}
+.container .box13 {
+  animation-delay: 1.3s;
+}
+.container .box13:after {
+  animation-delay: 1.3s;
+}
+.container .box13:nth-of-type(even) {
+  animation-delay: 1.3s;
+}
+.container .box13:nth-of-type(even):after {
+  animation-delay: 1.3s;
+}
+.container .box14 {
+  animation-delay: 1.4s;
+}
+.container .box14:after {
+  animation-delay: 1.4s;
+}
+.container .box14:nth-of-type(even) {
+  animation-delay: 1.4s;
+}
+.container .box14:nth-of-type(even):after {
+  animation-delay: 1.4s;
+}
+.container .box15 {
+  animation-delay: 1.5s;
+}
+.container .box15:after {
+  animation-delay: 1.5s;
+}
+.container .box15:nth-of-type(even) {
+  animation-delay: 1.5s;
+}
+.container .box15:nth-of-type(even):after {
+  animation-delay: 1.5s;
+}
+@keyframes background {
+  0% {
+    background-color:  #e6f2ff;
+  }
+  50% {
+    background-color:  #e6f2ff;
+  }
+  50.00000001% {
+    background-color:  #e6f2ff;
+  }
+  99% {
+    background-color:  #e6f2ff;
+  }
+  99.00000001% {
+    background-color:  #e6f2ff;
+  }
+}
+@keyframes backgroundalt {
+  0% {
+    background-color:  #e6f2ff;
+  }
+  50% {
+    background-color:  #e6f2ff;
+  }
+  50.00000001% {
+    background-color:  #e6f2ff;
+  }
+  99% {
+    background-color:  #e6f2ff;
+  }
+  99.00000001% {
+    background-color:  #e6f2ff;
+  }
+}
+@keyframes circle {
+  0% {
+    background-color:  #e6f2ff;
+    transform: scale(0);
+  }
+  48% {
+    transform: scale(1.8);
+  }
+  50% {
+    transform: scale(1.8);
+    background-color:  #e6f2ff;
+  }
+  50.00000001% {
+    transform: scale(0);
+    background-color:  #e6f2ff;
+  }
+  99% {
+    transform: scale(1.8);
+   background-color:  #e6f2ff;
+  }
+  99.00000001% {
+    background-color:  #e6f2ff;
+    transform: scale(0);
+  }
+}
+@keyframes circlealt {
+  0% {
+    background-color:  #e6f2ff;
+    transform: scale(0);
+  }
+  48% {
+    transform: scale(1.8);
+  }
+  50% {
+    transform: scale(1.8);
+    background-color:  #e6f2ff;
+  }
+  50.00000001% {
+    transform: scale(0);
+    background-color:  #e6f2ff;
+  }
+  99% {
+    transform: scale(1.8);
+    background-color:  #e6f2ff;
+  }
+  99.00000001% {
+    background-color:  #e6f2ff;
+    transform: scale(0);
+  }
+}
+
+</style>
+<body>
+
+<div class='container'>
+  <div class='box box15'></div>
+  <div class='box box14'></div>
+  <div class='box box13'></div>
+  <div class='box box11'></div>
+  <div class='box box10'></div>
+  <div class='box box11'></div>
+  <div class='box box13'></div>
+  <div class='box box14'></div>
+  <div class='box box15'></div>
+  <div class='box box14'></div>
+  <div class='box box12'></div>
+  <div class='box box9'></div>
+  <div class='box box8'></div>
+  <div class='box box7'></div>
+  <div class='box box8'></div>
+  <div class='box box9'></div>
+  <div class='box box12'></div>
+  <div class='box box14'></div>
+  <div class='box box13'></div>
+  <div class='box box9'></div>
+  <div class='box box6'></div>
+  <div class='box box5'></div>
+  <div class='box box4'></div>
+  <div class='box box5'></div>
+  <div class='box box6'></div>
+  <div class='box box9'></div>
+  <div class='box box13'></div>
+  <div class='box box11'></div>
+  <div class='box box8'></div>
+  <div class='box box5'></div>
+  <div class='box box3'></div>
+  <div class='box box2'></div>
+  <div class='box box3'></div>
+  <div class='box box5'></div>
+  <div class='box box8'></div>
+  <div class='box box11'></div>
+  <div class='box box10'></div>
+  <div class='box box7'></div>
+  <div class='box box4'></div>
+  <div class='box box2'></div>
+  <div class='box box1'></div>
+  <div class='box box2'></div>
+  <div class='box box4'></div>
+  <div class='box box7'></div>
+  <div class='box box10'></div>
+  <div class='box box11'></div>
+  <div class='box box8'></div>
+  <div class='box box5'></div>
+  <div class='box box3'></div>
+  <div class='box box2'></div>
+  <div class='box box3'></div>
+  <div class='box box5'></div>
+  <div class='box box8'></div>
+  <div class='box box11'></div>
+  <div class='box box13'></div>
+  <div class='box box9'></div>
+  <div class='box box6'></div>
+  <div class='box box5'></div>
+  <div class='box box4'></div>
+  <div class='box box5'></div>
+  <div class='box box6'></div>
+  <div class='box box9'></div>
+  <div class='box box13'></div>
+  <div class='box box14'></div>
+  <div class='box box12'></div>
+  <div class='box box9'></div>
+  <div class='box box8'></div>
+  <div class='box box7'></div>
+  <div class='box box8'></div>
+  <div class='box box9'></div>
+  <div class='box box12'></div>
+  <div class='box box14'></div>
+  <div class='box box15'></div>
+  <div class='box box14'></div>
+  <div class='box box13'></div>
+  <div class='box box11'></div>
+  <div class='box box10'></div>
+  <div class='box box11'></div>
+  <div class='box box13'></div>
+  <div class='box box14'></div>
+  <div class='box box15'></div>
+   <div class='box box5'></div>
+  <div class='box box8'></div>
+  <div class='box box11'></div>
+  <div class='box box13'></div>
+  <div class='box box9'></div>
+  <div class='box box6'></div>
+  <div class='box box5'></div>
+  <div class='box box4'></div>
+  <div class='box box5'></div>
+  <div class='box box6'></div>
+  <div class='box box9'></div>
+  <div class='box box13'></div>
+  <div class='box box14'></div>
+  <div class='box box12'></div>
+  <div class='box box9'></div>
+  <div class='box box8'></div>
+  <div class='box box7'></div>
+  <div class='box box8'></div>
+  <div class='box box9'></div>
+  <div class='box box12'></div>
+  <div class='box box14'></div>
+  <div class='box box15'></div>
+  <div class='box box14'></div>
+  <div class='box box13'></div>
+  <div class='box box11'></div>
+  <div class='box box10'></div>
+  <div class='box box11'></div>
+  <div class='box box13'></div>
+  <div class='box box14'></div>
+  <div class='box box15'></div>
+   <div class='box box5'></div>
+  <div class='box box8'></div>
+  <div class='box box11'></div>
+  <div class='box box13'></div>
+  <div class='box box9'></div>
+  <div class='box box6'></div>
+  <div class='box box5'></div>
+  <div class='box box4'></div>
+  <div class='box box5'></div>
+  <div class='box box6'></div>
+  <div class='box box9'></div>
+  <div class='box box13'></div>
+  <div class='box box14'></div>
+  <div class='box box12'></div>
+  <div class='box box9'></div>
+  <div class='box box8'></div>
+  <div class='box box7'></div>
+  <div class='box box8'></div>
+  <div class='box box9'></div>
+  <div class='box box12'></div>
+  <div class='box box14'></div>
+   <div class='box box15'></div>
+  <div class='box box14'></div>
+  <div class='box box13'></div>
+  <div class='box box11'></div>
+  <div class='box box10'></div>
+  <div class='box box11'></div>
+  <div class='box box13'></div>
+  <div class='box box14'></div>
+  <div class='box box15'></div>
+   <div class='box box5'></div>
+  <div class='box box8'></div>
+  <div class='box box11'></div>
+  <div class='box box13'></div>
+  <div class='box box9'></div>
+  <div class='box box6'></div>
+  <div class='box box5'></div>
+  <div class='box box4'></div>
+  <div class='box box5'></div>
+  <div class='box box6'></div>
+  <div class='box box9'></div>
+  <div class='box box13'></div>
+  <div class='box box14'></div>
+  <div class='box box12'></div>
+  <div class='box box9'></div>
+  <div class='box box8'></div>
+  <div class='box box7'></div>
+  <div class='box box8'></div>
+  <div class='box box9'></div>
+  <div class='box box12'></div>
+  <div class='box box14'></div>
+    <div class='box box15'></div>
+  <div class='box box14'></div>
+  <div class='box box13'></div>
+  <div class='box box11'></div>
+  <div class='box box10'></div>
+  <div class='box box11'></div>
+  <div class='box box13'></div>
+  <div class='box box14'></div>
+  <div class='box box15'></div>
+   <div class='box box5'></div>
+  <div class='box box8'></div>
+  <div class='box box11'></div>
+  <div class='box box13'></div>
+  <div class='box box9'></div>
+  <div class='box box6'></div>
+  <div class='box box5'></div>
+  <div class='box box4'></div>
+  <div class='box box5'></div>
+  <div class='box box6'></div>
+  <div class='box box9'></div>
+  <div class='box box13'></div>
+  <div class='box box14'></div>
+  <div class='box box12'></div>
+  <div class='box box9'></div>
+  <div class='box box8'></div>
+  <div class='box box7'></div>
+  <div class='box box8'></div>
+  <div class='box box9'></div>
+  <div class='box box12'></div>
+  <div class='box box14'></div>
+    <div class='box box15'></div>
+  <div class='box box14'></div>
+  <div class='box box13'></div>
+  <div class='box box11'></div>
+  <div class='box box10'></div>
+  <div class='box box11'></div>
+  <div class='box box13'></div>
+  <div class='box box14'></div>
+  <div class='box box15'></div>
+   <div class='box box5'></div>
+  <div class='box box8'></div>
+  <div class='box box11'></div>
+  <div class='box box13'></div>
+  <div class='box box9'></div>
+  <div class='box box6'></div>
+  <div class='box box5'></div>
+  <div class='box box4'></div>
+  <div class='box box5'></div>
+  <div class='box box6'></div>
+  <div class='box box9'></div>
+  <div class='box box13'></div>
+  <div class='box box14'></div>
+  <div class='box box12'></div>
+  <div class='box box9'></div>
+  <div class='box box8'></div>
+  <div class='box box7'></div>
+  <div class='box box8'></div>
+  <div class='box box9'></div>
+  <div class='box box12'></div>
+  <div class='box box14'></div>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script>
+  $( "body" ).click(function() {
+  console.log("hello")
+  $(this).toggleClass('red');
+  });
+</script>
+
+	<script src="scripts.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$(".box").css({"background-color": "white"});
+	$(".box").css("margin", "1px");
+
+
+	$(".box").mouseover(function(){
+		var current_step = $(this).data("step")
+		if (current_step === undefined){
+			$(this).css("border", "150px solid white");
+			$(this).data("step",1)
+		} 
+
+	    if (current_step === 1){
+	    	$(this).css("border", "50px solid white");
+	    	$(this).data("step",2)
+	   	}	
+
+	   	if (current_step === 2){
+	    	$(this).css("border", "10px solid white");
+	    	$(this).data("step",3)
+	   	}	
+
+	   	if (current_step === 3){
+	    $(this).css("border", "50px solid white");
+	    $(this).data("step",4)
+	   	}
+
+	   	if (current_step === 4){
+	    $(this).css("border", "5px solid white");
+	    $(this).data("step",5)
+	   	}
+
+
+	});
+
+});	
+
+	</script>				
+<script type="text/javascript">
+    const OPTS = {
+    fill:        'none',
+    radius:      200,
+    strokeWidth: { 45 : 0 },
+    scale:       { 0: 1 },
+    angle:       { 'rand(-35, -70)': 0 },
+    duration:    5000,
+    left:        0,
+    top:         0,
+    easing:      'cubic.out'
+};
+
+
+
+const circle1 = new mojs.Shape({
+    ...OPTS,
+    stroke: '#ffcc99',
+});
+
+const circle2 = new mojs.Shape({
+    ...OPTS,
+    radius:      { 0 : 150 },
+    strokeWidth: { 250: 0 },
+    stroke:      '#ff9966',
+    delay:       'rand(75, 150)'
+});
+
+const circle3 = new mojs.Shape({
+    ...OPTS,
+    radius:      { 0 : 50 },
+    strokeWidth: { 0: 10 },
+    stroke:      '#ff9999',
+    delay:       'rand(75, 150)'
+});
+
+document.addEventListener( 'click', function (e) {
+    circle1
+        .tune({ x: e.pageX, y: e.pageY  })
+        .replay();
+
+    circle2
+        .tune({ x: e.pageX, y: e.pageY  })
+        .replay();
+
+    circle3
+        .tune({ x: e.pageX, y: e.pageY  })
+        .replay();
+});
+
+
+</script>
+</body>
+</html>
