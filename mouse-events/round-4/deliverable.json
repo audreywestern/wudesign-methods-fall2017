@@ -1,0 +1,44 @@
+{
+  "entrypoints" : [
+    {
+      "name" : "1",
+      "file" : "intro.html"
+    },
+    {
+      "name" : "2",
+      "file" : "intro2.html"
+    },
+    {
+      "name" : "3",
+      "file" : "intro3.html"
+    },
+    {
+      "name" : " 4",
+      "file" : "intro4.html"
+    },
+    {
+      "name" : "5",
+      "file" : "intro5.html"
+    },
+    {
+      "name" : "6",
+      "file" : "intro6.html"
+    },
+    {
+      "name" : "7",
+      "file" : "index_7.html"
+    },
+     {
+      "name" : "8",
+      "file" : "index_8.html"
+    },
+    {
+      "name" : "9",
+      "file" : "index_9.html"
+    },
+    {
+      "name" : "10",
+      "file" : "index_10.html"
+    }
+  ]
+}
