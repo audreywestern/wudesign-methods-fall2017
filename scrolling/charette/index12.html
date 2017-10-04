@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>idea12</title>
+
+	<style type="text/css">
+
+html, body {
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+	overflow-x:hidden;
+}
+
+.skrollable {
+
+	position:fixed;
+	z-index:100;
+}
+
+.skrollr-mobile .skrollable {
+	position:absolute;
+}
+
+.skrollable .skrollable {
+
+	position:absolute;
+}
+
+.skrollable .skrollable .skrollable {
+
+	position:static;
+}
+html, body, div, span, p, a, del, em, img, ol, ul, li, fieldset, form, label {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+body {
+	background: pink;
+	
+}
+
+
+
+.skrollr-desktop #scrollbar {display:none;}
+
+
+#intro {
+	width:80%;
+	left:50%;
+	top:10em;
+	margin-left:-40%;
+	padding:20em;
+	background:orange;
+	text-align:center;
+	border-radius:1000em;
+
+	-webkit-transform-origin:0 0;
+	-moz-transform-origin:0 0;
+	-ms-transform-origin:0 0;
+	-o-transform-origin:0 0;
+	transform-origin:0 0;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+#transform {
+	width:70%;
+	left:50%;
+	top:20%;
+	margin-left:-35%;
+	text-align:center;
+	font-size:150%;
+
+	.transform-origin(50%, 50%);
+}
+
+#properties {
+	width:100%;
+	height:100%;
+	padding-top:10%;
+	text-align:center;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+#easing {
+	top:10%;
+	width:50%;
+	z-index:101;
+}
+
+	</style>
+	
+</head>
+
+<body>
+
+
+	<div id="intro" data-0="opacity:1;top:3%;transform:rotate(0deg);transform-origin:0 0;" data-500="opacity:0;top:-10%;transform:rotate(-90deg);"> </div>
+		
+		
+<script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+	<script type="text/javascript" src="dist/skrollr.min.js"></script>
+
+
+	<script type="text/javascript">
+	var s = skrollr.init({
+		edgeStrategy: 'set',
+		easing: {
+			WTF: Math.random,
+			inverted: function(p) {
+				return 1-p;
+			}
+		}
+	});
+	</script>
+</body>
+
+</html>
