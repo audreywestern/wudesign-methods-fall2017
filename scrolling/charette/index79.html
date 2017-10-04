@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>idea79</title>
+</head>
+<style type="text/css">
+	body {
+  background: pink;
+  font-family: sans-serif;
+  font-weight: 400;
+  -webkit-perspective: 800px;
+  perspective: 800px;
+}
+
+.cube {
+  position: relative;
+  width: 500%;
+  min-height: 50vh;
+}
+.cube span {
+  position: absolute;
+  display: inline-block;
+  top: 500%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-500%, -50%);
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#top {
+  background: white;
+  -webkit-transform-origin: 50% 500%;
+  transform-origin: 500% 500%;
+}
+#top span {
+  background: #e6ac00;
+  color: #664d00;
+}
+
+#content {
+  background: orange;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 500%;
+}
+
+
+</style>
+<body>
+<section class="cube" id="top">
+</section>
+<section class="cube" id="content"></section>
+<script type="text/javascript">
+	function rotateScenes(){
+  var scroll = window.pageYOffset,
+      relPos = scroll / height,
+      angle = 360 * relPos;
+  
+  if(scroll >= height){
+    section1.style.transform = "rotateX(180deg)";
+    section2.style.transform = "rotateX(0deg)";
+  }
+  
+  section1.style.transform = "rotateX(" + (angle) + "deg)";
+  section2.style.transform = "rotateX(-" + (90 - angle) + "deg)";
+}
+
+var section1 = document.querySelector("#top"),
+    section2 = document.querySelector("#content"),
+    height = window.innerHeight;
+window.addEventListener("scroll", rotateScenes);
+</script>
+</body>
+</html>
+
+
