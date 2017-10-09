@@ -1,0 +1,643 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>12</title>
+</head>
+<style type="text/css">
+ 
+html,
+body,
+ {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  color: black;
+}
+
+
+body {
+  line-height: 10;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
+}
+
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+
+p {
+  color: #616c84;
+  margin: 0.5em 0;
+}
+
+a:link,
+a:visited {
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+a:hover,
+a:active {
+  background: black;
+  color: black;
+}
+
+
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+html,
+body {
+  height: 500%;
+  background: black;
+}
+
+.column-container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 200%;
+  text-align: center;
+}
+@media screen and (min-width: 300px) {
+  .column-container {
+    padding-top: 20%;
+    margin-bottom: -125px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .column-container {
+    padding-top: 10%;
+  }
+}
+
+.column {
+  width: 30%;
+  height: 10%;
+  margin: 0 2%;
+  display: inline-block;
+}
+
+.block {
+  border-radius: 50px;
+  margin-bottom: 50%;
+}
+
+.block-1x {
+  height: 50%;
+}
+
+.block-2x {
+  height: 150%;
+}
+
+.block-3x {
+  height: 20%;
+}
+
+.block-blueberry {
+  background: black;
+  border: dotted;
+  border-width: 500px;
+  border-color: white;
+}
+
+.block-slate {
+  background: black;
+  border: dotted;
+  border-width: 300px;
+  border-color: orange;
+}
+
+.block-grape {
+  background: black;
+  border: dotted;
+  border-width: 100px;
+  border-color: white;
+}
+
+.block-raspberry {
+  background: black;
+  border: dotted;
+  border-width: 50px;
+  border-color: orange;
+}
+
+.block-mango {
+  background: black;
+  border: dotted;
+  border-width: 500px;
+  border-color: white;
+}
+
+.block-orange {
+  background: black;
+  border: dotted;
+  border-width: 800px;
+  border-color: orange;
+}
+
+.block-kiwi {
+  background: black;
+  border: dotted;
+  border-width: 20px;
+  border-color: white;
+}
+
+.withLove {
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 2em;
+  cursor: default;
+  color: #616c84;
+}
+@media screen and (min-width: 900px) {
+  .withLove {
+    margin-top: 125px;
+  }
+}
+.withLove * {
+  display: inline-block;
+}
+.withLove .alpha,
+.withLove .omega {
+  width: 40%;
+}
+.withLove .alpha {
+  text-align: right;
+}
+.withLove .omega {
+  text-align: left;
+}
+.withLove .heart {
+  margin: 0 -2px;
+  position: relative;
+  z-index: 3;
+  -webkit-animation: throb 1.33s ease-in-out infinite;
+  animation: throb 1.33s ease-in-out infinite;
+}
+.withLove .heart path {
+  fill: #ff005d;
+}
+@media screen and (min-width: 300px) {
+  .withLove .heart {
+    width: 30px;
+    height: 30px;
+    top: 0.66em;
+  }
+}
+@media screen and (min-width: 460px) {
+  .withLove .heart {
+    top: 0.8em;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@-webkit-keyframes throb {
+  0% {
+    -webkit-transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(0.8);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes throb {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+</style>
+<body>
+<div class="column-container clearfix">
+<div class="column-container clearfix">
+  <!-- col 1 -->
+  <div class="column">
+    <div class="block block-1x block-slate" data-scrollreveal="enter top over 3s after 0.5s"></div>
+    <div class="block block-2x block-mango" data-scrollreveal="enter right after 0.5s"></div>
+    <div class="block block-1x block-kiwi" data-scrollreveal="enter bottom over 1s and move 300px after 0.3s"></div>
+    <div class="block block-3x block-blueberry" data-scrollreveal="enter top over 0.5s and move 200px"></div>
+    <div class="block block-2x block-raspberry" data-scrollreveal="enter bottom over 1s and move 100px"></div>
+    <div class="block block-1x block-grape" data-scrollreveal="enter top"></div>
+  </div>
+
+  <!-- col 2 -->
+  <div class="column">
+    <div class="block block-3x block-kiwi" data-scrollreveal="enter bottom over 1s and move 300px after 0.3s"></div>
+    <div class="block block-1x block-orange" data-scrollreveal="enter left"></div>
+    <div class="block block-2x block-grape" data-scrollreveal="enter top"></div>
+    <div class="block block-1x block-orange" data-scrollreveal="enter left"></div>
+    <div class="block block-1x block-grape" data-scrollreveal="enter top"></div>
+    <div class="block block-2x block-slate" data-scrollreveal="enter top over 3s after 0.5s"></div>
+  </div>
+
+  <!-- col 3 -->
+  <div class="column">
+    <div class="block block-2x block-raspberry" data-scrollreveal="enter bottom over 1s and move 100px"></div>
+    <div class="block block-1x block-blueberry" data-scrollreveal="enter top over 0.5s and move 200px"></div>
+    <div class="block block-2x block-slate" data-scrollreveal="enter top over 3s after 0.5s"></div>
+    <div class="block block-1x block-mango" data-scrollreveal="enter right after 0.5s"></div>
+    <div class="block block-1x block-slate" data-scrollreveal="enter top over 3s after 0.5s"></div>
+    <div class="block block-3x block-orange" data-scrollreveal="enter left"></div>
+  </div>
+
+  <!-- col 4 -->
+  <div class="column">
+    <div class="block block-1x block-orange" data-scrollreveal="enter left"></div>
+    <div class="block block-2x block-grape" data-scrollreveal="enter top"></div>
+    <div class="block block-3x block-raspberry" data-scrollreveal="enter bottom over 1s and move 100px"></div>
+    <div class="block block-1x block-blueberry" data-scrollreveal="enter top over 0.5s and move 200px"></div>
+    <div class="block block-2x block-kiwi" data-scrollreveal="enter bottom over 1s and move 300px after 0.3s"></div>
+    <div class="block block-1x block-mango" data-scrollreveal="enter right after 0.5s"></div>
+  </div>
+
+  <!-- col 5 -->
+  <div class="column">
+    <div class="block block-3x block-mango" data-scrollreveal="enter right after 0.5s"></div>
+    <div class="block block-1x block-kiwi" data-scrollreveal="enter bottom over 1s and move 300px after 0.3s"></div>
+    <div class="block block-2x block-orange" data-scrollreveal="enter left"></div>
+    <div class="block block-1x block-grape" data-scrollreveal="enter top"></div>
+    <div class="block block-1x block-slate" data-scrollreveal="enter top over 3s after 0.5s"></div>
+    <div class="block block-2x block-raspberry" data-scrollreveal="enter bottom over 1s and move 100px"></div>
+  </div>
+
+  <!-- col 6 -->
+  <div class="column">
+    <div class="block block-1x block-kiwi" data-scrollreveal="enter bottom over 1s and move 300px after 0.3s"></div>
+    <div class="block block-3x block-slate" data-scrollreveal="enter top over 3s after 0.5s"></div>
+    <div class="block block-1x block-blueberry" data-scrollreveal="enter top over 0.5s and move 200px"></div>
+    <div class="block block-3x block-kiwi" data-scrollreveal="enter bottom over 1s and move 300px after 0.3s"></div>
+    <div class="block block-1x block-orange" data-scrollreveal="enter left"></div>
+    <div class="block block-1x block-blueberry" data-scrollreveal="enter top over 0.5s and move 200px"></div>
+  </div>
+
+  <!-- col 7 -->
+  <div class="column">
+    <div class="block block-2x block-blueberry" data-scrollreveal="enter top over 0.5s and move 200px"></div>
+    <div class="block block-1x block-raspberry" data-scrollreveal="enter bottom over 1s and move 100px"></div>
+    <div class="block block-1x block-mango" data-scrollreveal="enter right after 0.5s"></div>
+    <div class="block block-3x block-raspberry" data-scrollreveal="enter bottom over 1s and move 100px"></div>
+    <div class="block block-2x block-mango" data-scrollreveal="enter right after 0.5s"></div>
+    <div class="block block-1x block-slate" data-scrollreveal="enter top over 3s after 0.5s"></div>
+  </div>
+
+  <!-- col 8 -->
+  <div class="column">
+    <div class="block block-1x block-grape" data-scrollreveal="enter top"></div>
+    <div class="block block-2x block-orange" data-scrollreveal="enter left"></div>
+    <div class="block block-1x block-grape" data-scrollreveal="enter top"></div>
+    <div class="block block-3x block-slate" data-scrollreveal="enter top over 3s after 0.5s"></div>
+    <div class="block block-1x block-blueberry" data-scrollreveal="enter top over 0.5s and move 200px"></div>
+    <div class="block block-2x block-kiwi" data-scrollreveal="enter bottom over 1s and move 300px after 0.3s"></div>
+  </div>
+
+</div>
+<script type="text/javascript">
+
+
+;(function (window) {
+
+  'use strict';
+
+  var docElem = window.document.documentElement;
+
+  function getViewportH () {
+    var client = docElem['clientHeight'],
+      inner = window['innerHeight'];
+
+    return (client < inner) ? inner : client;
+  }
+
+  function getOffset (el) {
+    var offsetTop = 0,
+        offsetLeft = 0;
+
+    do {
+      if (!isNaN(el.offsetTop)) {
+        offsetTop += el.offsetTop;
+      }
+      if (!isNaN(el.offsetLeft)) {
+        offsetLeft += el.offsetLeft;
+      }
+    } while (el = el.offsetParent)
+
+    return {
+      top: offsetTop,
+      left: offsetLeft
+    }
+  }
+
+  function isElementInViewport (el, h) {
+    var scrolled = window.pageYOffset,
+        viewed = scrolled + getViewportH(),
+        elH = el.offsetHeight,
+        elTop = getOffset(el).top,
+        elBottom = elTop + elH,
+        h = h || 0;
+
+    return (elTop + elH * h) <= viewed && (elBottom) >= scrolled;
+  }
+
+  function extend (a, b) {
+    for (var key in b) {
+      if (b.hasOwnProperty(key)) {
+        a[key] = b[key];
+      }
+    }
+    return a;
+  }
+
+
+  function scrollReveal(options) {
+      this.options = extend(this.defaults, options);
+      this._init();
+  }
+
+
+
+  scrollReveal.prototype = {
+    defaults: {
+      axis: 'y',
+      distance: '25px',
+      duration: '0.66s',
+      delay: '0s',
+
+      viewportFactor: 0.33
+    },
+
+
+    _init: function () {
+
+      var self = this;
+
+      this.elems = Array.prototype.slice.call(docElem.querySelectorAll('[data-scrollReveal]'));
+      this.scrolled = false;
+
+      this.elems.forEach(function (el, i) {
+        self.animate(el);
+      });
+
+      var scrollHandler = function () {
+        if (!self.scrolled) {
+          self.scrolled = true;
+          setTimeout(function () {
+            self._scrollPage();
+          }, 60);
+        }
+      };
+
+      var resizeHandler = function () {
+        function delayed() {
+          self._scrollPage();
+          self.resizeTimeout = null;
+        }
+        if (self.resizeTimeout) {
+          clearTimeout(self.resizeTimeout);
+        }
+        self.resizeTimeout = setTimeout(delayed, 200);
+      };
+
+      window.addEventListener('scroll', scrollHandler, false);
+      window.addEventListener('resize', resizeHandler, false);
+    },
+
+
+    _scrollPage: function () {
+        var self = this;
+
+        this.elems.forEach(function (el, i) {
+            if (isElementInViewport(el, self.options.viewportFactor)) {
+                self.animate(el);
+            }
+        });
+        this.scrolled = false;
+    },
+
+
+    parseLanguage: function (el) {
+
+
+      var words = el.getAttribute('data-scrollreveal').split(/[, ]+/),
+          enterFrom,
+          parsed = {};
+
+      function filter (words) {
+        var ret = [],
+
+            blacklist = [
+              "from",
+              "the",
+              "and",
+              "then",
+              "but"
+            ];
+
+        words.forEach(function (word, i) {
+          if (blacklist.indexOf(word) > -1) {
+            return;
+          }
+          ret.push(word);
+        });
+
+        return ret;
+      }
+
+      words = filter(words);
+
+      words.forEach(function (word, i) {
+
+        switch (word) {
+          case "enter":
+            enterFrom = words[i + 1];
+
+            if (enterFrom == "top" || enterFrom == "bottom") {
+              parsed.axis = "y";
+            }
+
+            if (enterFrom == "left" || enterFrom == "right") {
+              parsed.axis = "x";
+            }
+
+            return;
+
+          case "after":
+            parsed.delay = words[i + 1];
+            return;
+
+          case "wait":
+            parsed.delay = words[i + 1];
+            return;
+
+          case "move":
+            parsed.distance = words[i + 1];
+            return;
+
+          case "over":
+            parsed.duration = words[i + 1];
+            return;
+
+          case "trigger":
+            parsed.eventName = words[i + 1];
+            return;
+
+          default:
+        //  Unrecognizable words; do nothing.
+            return;
+        }
+      });
+
+
+      if (enterFrom == "top" || enterFrom == "left") {
+
+        if (!typeof parsed.distance == "undefined") {
+          parsed.distance = "-" + parsed.distance;
+        }
+
+        else {
+          parsed.distance = "-" + this.options.distance;
+        }
+
+      }
+
+      return parsed;
+    },
+
+
+    genCSS: function (el, axis) {
+      var parsed = this.parseLanguage(el);
+
+      var dist   = parsed.distance || this.options.distance,
+          dur    = parsed.duration || this.options.duration,
+          delay  = parsed.delay    || this.options.delay,
+          axis   = parsed.axis     || this.options.axis;
+
+      var transition = "-webkit-transition: all " + dur + " ease " + delay + ";" +
+                          "-moz-transition: all " + dur + " ease " + delay + ";" +
+                            "-o-transition: all " + dur + " ease " + delay + ";" +
+                               "transition: all " + dur + " ease " + delay + ";";
+
+      var initial = "-webkit-transform: translate" + axis + "(" + dist + ");" +
+                       "-moz-transform: translate" + axis + "(" + dist + ");" +
+                            "transform: translate" + axis + "(" + dist + ");" +
+                              "opacity: 0;";
+
+      var target = "-webkit-transform: translate" + axis + "(0);" +
+                      "-moz-transform: translate" + axis + "(0);" +
+                           "transform: translate" + axis + "(0);" +
+                             "opacity: 1;";
+      return {
+        transition: transition,
+        initial: initial,
+        target: target,
+        totalDuration: ((parseFloat(dur) + parseFloat(delay)) * 1000)
+      };
+    },
+
+
+    animate: function (el) {
+      var css = this.genCSS(el);
+
+      if (!el.getAttribute('data-sr-init')) {
+        el.setAttribute('style', css.initial);
+        el.setAttribute('data-sr-init', true);
+      }
+
+      if (el.getAttribute('data-sr-complete')) {
+        return;
+      }
+
+      if (isElementInViewport(el, this.options.viewportFactor)) {
+        el.setAttribute('style', css.target + css.transition);
+
+        setTimeout(function () {
+          el.removeAttribute('style');
+          el.setAttribute('data-sr-complete', true);
+        }, css.totalDuration);
+      }
+
+    }
+  }; 
+
+  document.addEventListener("DOMContentLoaded", function (evt) {
+    window.scrollReveal = new scrollReveal();
+  });
+
+})(window);
+</script>
+</body>
+</html>
+
