@@ -1,0 +1,129 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>7
+  </title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+</head>
+<style type="text/css">
+  body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+
+svg {
+  display: block;
+  margin: 0 auto;
+  -webkit-animation: rotate 20s infinite linear;
+          animation: rotate 20s infinite linear;
+           animation: freakys 5s ease-in-out infinite;
+          border-radius: 150px;
+          background-color: transparent;
+}
+
+div {
+  display: block;
+  margin: 0 auto;
+  max-width: 20vw;
+  max-height: 20vw;
+  -webkit-animation: rotate 20s infinite linear;
+          animation: rotate 20s infinite linear;
+          border-radius: 50px;
+          background-color: transparent;
+}
+@keyframes freaky {
+    0% { transform: rotate(10deg);      
+        -webkit-filter: blur(10px);
+        -ms-filter: blur(10px);
+        filter: blur(10px); }
+  50% { transform: rotate(20deg); 
+            -webkit-filter: blur(0px);
+        -ms-filter: blur(0px);
+        filter: blur(0px);
+                -webkit-transform: scale(2.1);
+        -ms-transform: scale(2.1);
+        transform: scale(2.1); }
+
+    100% { transform: rotate(10deg); 
+            -webkit-filter: blur(10px);
+        -ms-filter: blur(10px);
+        filter: blur(10px); }
+}
+@keyframes freakys {
+  0% { transform: rotate(0deg);     
+        -webkit-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(5px); }
+
+    25% {      
+        -webkit-filter: blur(0px);
+        -ms-filter: blur(0px);
+        filter: blur(0px);  }
+
+    50% { transform: rotate(10deg); 
+            -webkit-filter: blur(10px);
+        -ms-filter: blur(10px);
+        filter: blur(10px); }
+
+    75% {      
+        -webkit-filter: blur(0px);
+        -ms-filter: blur(0px);
+        filter: blur(0px); 
+ }
+
+    100% {  transform: rotate(0deg) ;
+            -webkit-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(5px); }
+}
+
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+</style>
+<body>
+<div class="safespace">
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+
+<svg class="one" data-0="box-shadow: 0px 0px 150px rgba(52, 19, 227, 0);" data-100="box-shadow: 100px 0px 10px rgba(252, 159, 227, 1);" data-200="box-shadow: 0px 0px 150px rgba(52, 19, 227, 0);" data-300="box-shadow: 100px 0px 10px rgba(252, 159, 227, 1);" data-400="box-shadow: 0px 0px 150px rgba(52, 19, 227, 0);" data-500="box-shadow: 0px 0px 150px rgba(52, 19, 227, 0);" data-600="box-shadow: 100px 0px 10px rgba(252, 159, 227, 1);" data-700="box-shadow: 0px 0px 150px rgba(52, 19, 227, 0);" data-800="box-shadow: 100px 0px 10px rgba(252, 159, 227, 1);" data-900="box-shadow: 0px 0px 150px rgba(52, 19, 227, 0);"></svg>
+
+
+
+
+
+
+<script type="text/javascript" src="skrollr.min.js"></script>
+  <script type="text/javascript">
+  var s = skrollr.init();
+  </script>
+</body>
+</html> 
