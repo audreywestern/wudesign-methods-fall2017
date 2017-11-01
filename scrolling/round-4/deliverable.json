@@ -1,0 +1,33 @@
+{
+  "entrypoints" : [
+    {
+      "name" : "1",
+      "file" : "index1.html"
+    },
+    {
+      "name" : "2",
+      "file" : "index2.html"
+    },
+    {
+      "name" : "3",
+      "file" : "index3.html"
+    },
+    {
+      "name" : " 4",
+      "file" : "index4.html"
+    },
+    {
+      "name" : "5",
+      "file" : "index5.html"
+    },
+    {
+      "name" : "6",
+      "file" : "index6.html"
+    },
+    {
+      "name" : "7",
+      "file" : "index7.html"
+    }
+     
+  ]
+}
