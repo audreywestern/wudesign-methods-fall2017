@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>final</title>
+</head>
+<style type="text/css">
+
+
+.page-section_main-content {
+  position: fixed;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+html, body,
+.main-view-container {
+  width: 100%;
+  height: 100%;
+}
+
+.main-content-container {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: fixed;
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: white;
+
+}
+</style>
+<body>
+
+<div class="main-view-container">
+
+  <section class="page-section_main-content">
+
+    <div class="main-content-container" 
+    data-0=" filter:blur(100px);"
+    data-0=" filter:blur(100px);"
+        data-1500=" filter:blur(50px)"
+        data-2500=" filter:blur(30px)"
+        data-3500=" filter:blur(10px);"
+        data-4500=" filter:blur(0px)"
+        data-5500=" filter:blur(5px)"
+         data-6500=" filter:blur(0px)"
+        data-7500=" filter:blur(5px)"
+        data-8500=" filter:blur(0px);"
+        data-9500=" filter:blur(10px)"
+        data-10500=" filter:blur(0px)"
+        data-11500=" filter:blur(20px)"
+        data-12500=" filter:blur(5px)"
+        data-13500=" filter:blur(0px);"
+        data-14500=" filter:blur(20px)"
+        data-15500=" filter:blur(0px)"
+         data-16500=" filter:blur(10px)"
+         data-17500=" filter:blur(0px)"
+         data-18500=" filter:blur(20px)"
+          data-19500=" filter:blur(50px)"
+         data-20500=" filter:blur(100px)"
+         data-21500=" filter:blur(200px)"> </div>
+
+
+
+    </div>
+
+
+  </section>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TimelineMax.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+
+
+<script>
+  var s = skrollr.init({   render: function(data) {
+            forceHeight: false;
+        }});
+</script>
+<script type="text/javascript">
+
+function restartTimeline(tl) {
+  tl.restart();
+}
+
+var masterTL = new TimelineMax({
+    repeat: -1,
+    yoyo: true
+  }),
+  perspectiveTL,
+  circleTL,
+  BASE_ANIMATION_DURATION = 1,
+  ANIMATION_DURATION__FLY_THROUGH = BASE_ANIMATION_DURATION * 20,
+  ANIMATION_DURATION__CONTAINER_PERSPECTIVE = BASE_ANIMATION_DURATION * 0.8,
+  LABEL_CIRCLE_CREATION = "circleCreation",
+  LABEL_CIRCLE_FLOAT_END = "circleFloatEnd";
+
+function boundedRandom(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+var screenWidth = window.screen.availWidth,
+  screenHeight = window.screen.availHeight,
+ 
+  translateZMin = -725,
+  translateZMax = 900;
+
+var circleCount = 200,
+  circleContainer = document.querySelector(".main-content-container"),
+  docFrag = document.createDocumentFragment(),
+  circleElems;
+
+var circleElem = document.createElement("div");
+circleElem.className = "circle";
+
+for (var i = 0; i < circleCount; i++) {
+  docFrag.appendChild(circleElem.cloneNode(true));
+}
+
+circleContainer.style.perspectiveOrigin =
+  screenWidth / 2 + "px " + screenHeight / 2 + "px";
+
+perspectiveTL = new TimelineMax({
+});
+
+perspectiveTL.add(
+  TweenMax.fromTo(
+    circleContainer,
+    ANIMATION_DURATION__FLY_THROUGH,
+    {
+      perspective: 30,
+      opacity: 0
+    },
+    {
+      perspective: 300,
+      opacity: 1
+   
+    }
+  )
+);
+
+circleTL = new TimelineMax({
+
+});
+
+circleContainer.appendChild(docFrag);
+circleElems = document.querySelectorAll(".circle");
+
+var circleTweens = [];
+
+for (var i = 2, l = circleElems.length; i < l; i++) {
+  circleElem = circleElems[i];
+  circleTweens.push(
+    TweenMax.fromTo(
+      circleElem,
+      ANIMATION_DURATION__FLY_THROUGH,
+      {
+        opacity: Math.random() + 0.1,
+        x: boundedRandom(0, screenWidth),
+        y: boundedRandom(0, screenHeight),
+        z: boundedRandom(translateZMin, translateZMax)
+      },
+      {
+        opacity: Math.random(),
+        x: "+=" + boundedRandom(-screenWidth / 2.5, screenWidth / 2.5),
+        y: "+=" + boundedRandom(-screenHeight / 2.75, screenHeight / 2.75),
+        z: "+=" + boundedRandom(translateZMin, translateZMax),
+        ease: Power3.easeIn
+      }
+    )
+  );
+}
+
+circleTL.add(circleTweens);
+
+masterTL.add([perspectiveTL, circleTL]);
+masterTL.addLabel(LABEL_CIRCLE_FLOAT_END);
+
+</script>
+</body>
+</html>
