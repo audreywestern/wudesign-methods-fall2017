@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shape</title>
+	<style type="text/css">
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #F9FEFE;
+}
+
+div {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.cirlce {
+    width: 300px;
+	height: 300px;
+	background-color: #B8DFE5;
+	position: fixed;
+	border-radius: 10em;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 1400px){
+    .cirlce {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .cirlce {
+        width: 900px;
+        height: 900px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .cirlce {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 900px){
+	.cirlce {
+		background-color: #1C4F4F;
+	}
+}
+
+@media screen and (max-width: 100px){
+    .cirlce {
+        background: linear-gradient(90deg, #B8DFE5, pink);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .cirlce {
+        transform: rotate(90deg);
+    }
+}
+
+@media screen and (max-height: 200px){
+    .cirlce {
+     box-shadow: 20px 10px 50px white;
+    }
+}
+
+@media screen and (max-height: 300px){
+    .cirlce {
+     background-color: transparent;
+    border: 30px dotted #B8DFE5 !important;
+    }
+}
+
+@media screen and (max-height: 500px){
+    .cirlce {
+        border-radius: 100%;
+    }
+}
+
+@media screen and (max-height: 650px){
+    .cirlce {
+        transform: skew(-20deg);
+    }
+}
+
+@media screen and (max-height: 200px){
+    .cirlce {
+        border: 100px dotted #1C4F4F;
+    }
+}
+	</style>
+</head>
+<body>
+
+	<div>
+		<div class="cirlce"></div>
+	</div>
+
+</body>
+</html>

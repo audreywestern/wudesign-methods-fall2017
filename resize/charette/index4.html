@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image</title>
+	<style type="text/css">
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+div {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+img {
+    position: relative;
+    height: 1250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+@media screen and (max-width: 1100px){
+    img {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    img {
+        filter: blur(10px);
+    }
+}
+
+@media screen and (max-width: 700px){
+    img {
+        filter: grayscale(100%);
+    }
+}
+
+@media screen and (max-width: 500px){
+    img {
+        filter: hue-rotate(200deg);
+    }
+}
+
+@media screen and (max-width: 400px){
+    img {
+       filter: opacity(10%) hue-rotate(100deg);
+    }
+}
+
+@media screen and (max-height: 200px){
+    img {
+        filter: brightness(100%);
+    }
+}
+
+@media screen and (max-height: 500px){
+    img {
+        transform: rotate(10deg);
+    }
+}
+
+@media screen and (max-height: 650px){
+    img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-height: 300px){
+    img {
+        transform: skew(90deg);
+    }
+}
+
+@media screen and (max-height: 100px){
+    img {
+        box-shadow: 2px 20px 10px black;
+}
+	</style>
+</head>
+<body>
+
+	<div>
+		<img src="https://media1.popsugar-assets.com/files/thumbor/9W2kVgtOolJS9YQNya-12YeL9p4/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2012/09/36/4/192/1922243/0b8eebe2922599cf_59778672_b66a462a7f_o/i/Happiness-finding-your-first-leaf-pile-season.jpg">
+	</div>
+
+</body>
+</html>
