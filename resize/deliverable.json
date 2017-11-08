@@ -1,0 +1,20 @@
+{
+  "entrypoints" : [
+    {
+      "name" : "circle",
+      "file" : "index1.html"
+    },
+    {
+      "name" : "word",
+      "file" : "index2.html"
+    },
+    {
+      "name" : "paragraph",
+      "file" : "index3.html"
+    },
+    {
+      "name" : "dog",
+      "file" : "index4.html"
+    }
+  ]
+}
