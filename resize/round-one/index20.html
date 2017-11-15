@@ -1,0 +1,108 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>14</title>
+	<style type="text/css">
+	
+	</style>
+	
+	<script src="https://use.typekit.net/mkp5hqr.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://use.fontawesome.com/3620f97ccd.js"></script>
+</head>
+<body>
+		<img src="https://static.pexels.com/photos/417045/pexels-photo-417045.jpeg">
+
+
+	<div class="container">
+		<h1>resize</h1>
+		
+		<div id="stretch">
+			<i class="fa fa-angle-double-right" aria-hidden="true"></i>
+		</div>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+
+	$(window).load(function() {
+		 $("#screenwash").animate({top:"0px"}, 2000, "swing");
+		});
+
+	function hideText() {
+        $("#screenwash").css({display: "none"});
+    }
+
+
+	var width400 = window.matchMedia("(min-width: 400px) and (max-width: 405px)");
+	var width450 = window.matchMedia("(min-width: 450px) and (max-width: 455px)");
+	var width500 = window.matchMedia("(min-width: 500px) and (max-width: 505px)");
+	var width550 = window.matchMedia("(min-width: 550px) and (max-width: 555px)");
+	var width600 = window.matchMedia("(min-width: 600px) and (max-width: 605px)");
+	var width650 = window.matchMedia("(min-width: 650px) and (max-width: 655px)");
+	var width700 = window.matchMedia("(min-width: 700px) and (max-width: 705px)");
+	var width750 = window.matchMedia("(min-width: 750px)");
+	var width800 = window.matchMedia("(min-width: 800px)");
+	var width850 = window.matchMedia("(min-width: 850px)");
+	var width900 = window.matchMedia("(min-width: 900px)");
+	var width950 = window.matchMedia("(min-width: 950px)");
+	var width1000 = window.matchMedia("(min-width: 1000px)");
+	var width1050 = window.matchMedia("(min-width: 1050px)");
+	var width1100 = window.matchMedia("(min-width: 1100px)");
+	var width1150 = window.matchMedia("(min-width: 1150px)");
+	var width1200 = window.matchMedia("(min-width: 1200px)");
+	var width1250 = window.matchMedia("(min-width: 1250px)");
+	var width1300 = window.matchMedia("(min-width: 1300px)");
+	var width1350 = window.matchMedia("(min-width: 1350px)");
+	var width1400 = window.matchMedia("(min-width: 1400px)");
+	var width1440 = window.matchMedia("(min-width: 100%)");
+
+	var height175 = window.matchMedia("(min-height: 175px)");
+	var height225 = window.matchMedia("(min-height: 225px)");
+	var height275 = window.matchMedia("(min-height: 275px)");
+	var height325 = window.matchMedia("(min-height: 325px)");
+	var height375 = window.matchMedia("(min-height: 375px)");
+	var height425 = window.matchMedia("(min-height: 425px)");
+	var height475 = window.matchMedia("(min-height: 475px)");
+	var height525 = window.matchMedia("(min-height: 525px)");
+	var height575 = window.matchMedia("(min-height: 575px)");
+	var height625 = window.matchMedia("(min-height: 625px)");
+	var height675 = window.matchMedia("(min-height: 675px)");
+	var height725 = window.matchMedia("(min-height: 725px)"); /*defunct in this screen*/
+	var height740 = window.matchMedia("(min-height: 740px)");
+
+
+// media query event handler
+if (matchMedia) {
+	var width400 = window.matchMedia("(min-width: 400px) and (max-width: 405px)");
+	width400.addListener(WidthChange1);
+	WidthChange1(width400);
+}
+
+
+var winW400;
+
+
+// media query change
+function WidthChange1(width400) {
+	if (width400.matches) {
+    	var randomTop = Math.floor((Math.random() * 675) + 0);
+    	var randomLeft = Math.floor((Math.random() * 1340) + 0);
+    	var randomWidth = Math.floor((Math.random() * 150) + 100);
+    	var Height = 40+randomWidth*2.1;
+    	winW400 = window.open("index19.html",'_blank', "resizable=yes,width=" + randomWidth + ",height=" + Height + ",top=" + randomTop +",left=" + randomLeft +"");
+    	setTimeout(winW400.focus, 0);
+    	var randomTime = Math.floor((Math.random() * 60000) + 5000);
+    	setTimeout(function(){ winW400.close() }, randomTime);
+    }
+}
+
+});
+
+		</script>
+	</div>
+
+</body>
+</html>
