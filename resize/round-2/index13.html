@@ -1,0 +1,177 @@
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		html {
+			width: 100%;
+			height: 100%;
+			background-color: black;
+		}
+		body {
+			width: 100%;
+			text-align: center;
+		}
+
+		div {
+			width: 100%;
+			position: relative;
+			margin: auto;
+		}
+		p {
+			width: 80%;
+			margin-left: 10%;
+			font-family: "helvetica";
+			color: white;
+			letter-spacing: 200px;
+			font-size: 45pt;
+			opacity: 0.1;
+		}
+
+		.david {
+			position: absolute;
+			text-align: center;
+			color: white;
+			z-index: 3000;
+			top: 200px;
+			font-family: "helvetica";
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 15pt;
+			letter-spacing: 20px;
+			opacity: 0;
+			line-height: 35px;
+		}
+		
+	
+	
+		@media(min-width: 0px) and (max-width: 1200px){
+
+			p {
+				letter-spacing: 0px;
+				transition: 2s;
+				opacity: .8;
+				
+			}
+		}	
+		@media(min-width: 1200px) and (max-width: 1600px){	
+			p {
+				letter-spacing: 0px;
+				transition: 2s;
+				opacity: 0;
+			}
+
+			.david {
+				opacity: 1;
+				transition: 3s;
+			}
+		}	
+	</style>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/reload.js"></script>
+	<script src="https://use.typekit.net/njg4cwg.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+
+</head>
+	<title>Resize</title>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+	<div><p>"We’re going through!” The Commander’s voice was like thin ice breaking. He wore his full-dress uniform, with the heavily braided white cap pulled down rakishly over one cold gray eye. “We can’t make it, sir. It’s spoiling for a hurricane, if you ask me.” “I’m not asking you, Lieutenant Berg,” said the Commander. “Throw on the power lights! Rev her up to 8,500! We’re going through!” The pounding of the cylinders increased: ta-pocketa-pocketa-pocketa-pocketa-pocketa. The Commander stared at the ice forming on the pilot window. He walked over and twisted a row of complicated dials. “Switch on No. 8 auxiliary!” he shouted. “Switch on No. 8 auxiliary!” repeated Lieutenant Berg. “Full strength in No. 3 turret!” shouted the Commander. “Full strength in No. 3 turret!” The crew, bending to their various tasks in the huge, hurtling eight-engined Navy hydroplane, looked at each other and grinned. “The Old Man’ll get us through,” they said to one another. “The Old Man ain’t afraid of Hell!” . . .</p>
+	
+	<span class="david">The Secret Life of Walter Mitty <br> <br> <br>
+	James Thurber</span></div>
+	
+<script type="text/javascript">
+			$(document).ready(function() {
+
+	$(window).load(function() {
+		 $("#screenwash").animate({top:"0px"}, 2000, "swing");
+		});
+
+	function hideText() {
+        $("#screenwash").css({display: "none"});
+    }
+
+
+	var width400 = window.matchMedia("(min-width: 400px) and (max-width: 405px)");
+	var width450 = window.matchMedia("(min-width: 450px) and (max-width: 455px)");
+	var width500 = window.matchMedia("(min-width: 500px) and (max-width: 505px)");
+	var width550 = window.matchMedia("(min-width: 550px) and (max-width: 555px)");
+	var width600 = window.matchMedia("(min-width: 600px) and (max-width: 605px)");
+	var width650 = window.matchMedia("(min-width: 650px) and (max-width: 655px)");
+	var width700 = window.matchMedia("(min-width: 700px) and (max-width: 705px)");
+	var width750 = window.matchMedia("(min-width: 750px)");
+	var width800 = window.matchMedia("(min-width: 800px)");
+	var width850 = window.matchMedia("(min-width: 850px)");
+	var width900 = window.matchMedia("(min-width: 900px)");
+	var width950 = window.matchMedia("(min-width: 950px)");
+	var width1000 = window.matchMedia("(min-width: 1000px)");
+	var width1050 = window.matchMedia("(min-width: 1050px)");
+	var width1100 = window.matchMedia("(min-width: 1100px)");
+	var width1150 = window.matchMedia("(min-width: 1150px)");
+	var width1200 = window.matchMedia("(min-width: 1200px)");
+	var width1250 = window.matchMedia("(min-width: 1250px)");
+	var width1300 = window.matchMedia("(min-width: 1300px)");
+	var width1350 = window.matchMedia("(min-width: 1350px)");
+	var width1400 = window.matchMedia("(min-width: 1400px)");
+	var width1440 = window.matchMedia("(min-width: 100%)");
+
+	var height175 = window.matchMedia("(min-height: 175px)");
+	var height225 = window.matchMedia("(min-height: 225px)");
+	var height275 = window.matchMedia("(min-height: 275px)");
+	var height325 = window.matchMedia("(min-height: 325px)");
+	var height375 = window.matchMedia("(min-height: 375px)");
+	var height425 = window.matchMedia("(min-height: 425px)");
+	var height475 = window.matchMedia("(min-height: 475px)");
+	var height525 = window.matchMedia("(min-height: 525px)");
+	var height575 = window.matchMedia("(min-height: 575px)");
+	var height625 = window.matchMedia("(min-height: 625px)");
+	var height675 = window.matchMedia("(min-height: 675px)");
+	var height725 = window.matchMedia("(min-height: 725px)"); /*defunct in this screen*/
+	var height740 = window.matchMedia("(min-height: 740px)");
+
+
+// media query event handler
+if (matchMedia) {
+	var width400 = window.matchMedia("(min-width: 300px) and (max-width: 400px)");
+	width400.addListener(WidthChange1);
+	WidthChange1(width400);
+}
+
+
+var winW400;
+
+
+// media query change
+function WidthChange1(width400) {
+	if (width400.matches) {
+    	var randomTop = Math.floor((Math.random() * 675) + 0);
+    	var randomLeft = Math.floor((Math.random() * 1340) + 0);
+    	var Width = 400;
+    	var Height = 300;
+    	winW400 = window.open("index14.html",'_blank', "resizable=yes,width=" + ",Width=30" + Width + ",height=30" + Height + ",top=" + randomTop +",left=" + randomLeft +"");
+    	setTimeout(winW400.focus, 0);
+    	
+    	
+    }
+}
+
+});
+
+		</script>
+
+
+</body>
+
+</html>
+
