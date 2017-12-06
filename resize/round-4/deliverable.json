@@ -1,0 +1,8 @@
+{
+  "entrypoints" : [
+    {
+      "name" : "All Text",
+      "file" : "index1.html"
+    }
+  ]
+}
