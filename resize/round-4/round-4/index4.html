@@ -1,0 +1,507 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+    @charset "UTF-8";
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    padding-left: 32px;
+     padding-right: 32px;
+}
+
+p {
+
+  left: 100em;
+    font-family: "acta-display";
+  color: white;
+  font-weight: 800;
+  font-size: 7em;
+  text-align: left;
+  hyphens: auto;
+  margin: auto;
+  transition: all 1500ms ease; 
+}
+
+
+
+div {
+
+    font-family: "acta-display";
+  color: white;
+  font-weight: 800;
+  font-size: 7em;
+  text-align: left;
+  hyphens: auto;
+  margin: auto;
+  transition: all 1500ms ease; 
+}
+
+
+    #arrow {
+      position: absolute;
+      width: 65px;
+      height: 65px;
+      right: 20px;
+      top: 260px;
+      z-index: 4000;
+      
+    }
+      #arrow3 {
+      position: absolute;
+      width: 65px;
+      height: 65px;
+      right: 20px;
+      top: 260px;
+      z-index: 4000;
+      
+    }
+    .scene2 {
+      display: none;
+    }
+
+    #quote_zero2 {
+      display: none;
+      width: 40%;
+      margin-top: 380px;
+      line-height: 40px;
+      width: 65%;
+      font-size: 16pt;
+      letter-spacing: 15px;
+      font-weight: 700;
+    }
+
+   
+
+@media(min-width: 1601px) and (max-width: 3600px) {
+   
+      #quote_zero2 {
+      display: block;
+      transition: 3s;
+      }
+    #arrow { 
+        width: 45px;
+        transition: 2s;
+       }
+       #arrow3 { 
+        display: none;
+       }
+
+       .font {
+      font-size: 7em;
+  }
+
+    }
+@media(min-width: 1300px) and (max-width: 1600px) {
+
+      #quote_zero2 {
+      display: block;
+      transition: 8s;
+      margin-top: 350px;
+      line-height: 40px;
+      width: 40%;
+      font-size: 16pt;
+      letter-spacing: 15px;
+      
+      }
+
+       #arrow { 
+        width: 45px;
+        transition: 2s;
+       }
+
+        #arrow3 { 
+       display: none;
+       }
+.font {
+      font-size: 6em;
+  }
+    }
+
+    @media(min-width: 900px) and (max-width: 1300px)  {
+    
+      #arrow { 
+        display: none;
+       }
+ #arrow3 { 
+        display: none;
+       }
+
+       .font {
+      font-size: 5em;
+  }
+
+    } 
+  
+    @media(min-width: 650px) and (max-width: 900px){
+
+      #arrow { 
+        display: none;
+       }
+        #arrow3 { 
+        display: none;
+       }
+
+       .font {
+      font-size: 3em;
+  }
+
+    } 
+
+    @media(min-width: 10px) and (max-width: 650px){  
+  body {
+    background-color: black;
+
+  }
+
+  .font {
+     font-size: 2em;  
+   }
+
+  #arrow { 
+        display: none;
+       }
+  #arrow3 { 
+        display: none;
+       }
+
+       }
+
+    }
+  </style>
+  <meta charset="UTF-8">
+  
+  <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    
+</head>
+<body>
+  
+  <p class="font"></p>
+  
+  </div>
+    <img class="download" id="arrow" src="arrow2.png" width="500px">
+    <img class="download" id="arrow3" src="arrow3.png" width="500px">
+  </div>
+
+
+
+<div class="scene2">
+
+  <div class="quote" id="quote_zero2">Not so fast!</div>
+
+  <p class="feature2" id="resistance2">You’re driving too fast!
+        
+        </p>
+
+  </div>  
+  <script type="text/javascript">
+    $(document).ready(function() {
+    function checkWidth() {
+        var windowWidth = $(window).width();
+        var windowHeight = $(window).height();
+
+        if (windowWidth <= 375) {
+          $('.font').html(". . .")
+          
+        }
+         else if (windowWidth <= 400) {
+          $('.font').html("nurses handed him shining . . .")
+          
+        }
+         else if (windowWidth <= 425) {
+          $('.font').html("he adjusted a mask and drew on thin gloves;")
+          
+        }
+        else if (windowWidth <= 450) {
+          $('.font').html("They slipped a white gown on him;")
+          
+        }
+        else if (windowWidth <= 475) {
+          $('.font').html("If you wish,” he said.")
+          
+        }
+        else if (windowWidth <= 500) {
+          $('.font').html("and at the grave, uncertain faces of the two great specialists.")
+          
+        }
+        else if (windowWidth <= 525) {
+          $('.font').html("Mitty looked at him and at the craven figure of Benbow, who drank,")
+          
+        }
+        else if (windowWidth <= 550) {
+          $('.font').html("If you would take over, Mitty?")
+          
+        }
+        else if (windowWidth <= 575) {
+          $('.font').html("Coreopsis has set in,” said Renshaw nervously.")
+          
+        }
+        else if (windowWidth <= 600) {
+          $('.font').html("A nurse hurried over and whispered to Renshaw, and Mitty saw the man turn pale.")
+          
+        }
+        else if (windowWidth <= 625) {
+          $('.font').html("Get on with the operation.")
+          
+        }
+        else if (windowWidth <= 650) {
+          $('.font').html("That will hold for ten minutes,” he said.")
+          
+        }
+        else if (windowWidth <= 675) {
+          $('.font').html("He pulled a faulty piston out of the machine and inserted the pen in its place.")
+          
+        }
+        else if (windowWidth <= 700) {
+          $('.font').html("Someone handed him a fountain pen.")
+          
+        }
+        else if (windowWidth <= 725) {
+          $('.font').html("Give me a fountain pen!” he snapped.")
+          
+        }
+        else if (windowWidth <= 750) {
+          $('.font').html("He began fingering delicately a row of glistening dials.")
+          
+        }
+        else if (windowWidth <= 775) {
+          $('.font').html("pocketa-queep.")
+          
+        }
+
+        else if (windowWidth <= 800) {
+          $('.font').html("He sprang to the machine, which was now going pocketa-pocketa-queep")
+          
+        }
+
+        else if (windowWidth <= 825) {
+          $('.font').html("Quiet, man!” said Mitty, in a low, cool voice.")
+
+         
+        }
+
+        else if (windowWidth <= 850) {
+          $('.font').html("There is no one in the East who knows how to fix it!")
+         
+        }
+
+        else if (windowWidth <= 875) {
+          $('.font').html("The new anaesthetizer is giving way! shouted an interne.")
+          
+        }
+
+        else if (windowWidth <= 900) {
+          $('.font').html("pocketa.")
+               
+      }
+
+      else if (windowWidth <= 925) {
+          $('.font').html("began at this moment to go pocketa-pocketa")
+            
+      }
+
+      else if (windowWidth <= 950) {
+          $('.font').html("A huge, complicated machine, connected to the operating table, with many tubes and wires,")
+             
+      }
+
+      else if (windowWidth <= 975) {
+          $('.font').html("You are very kind,” said Mitty.")
+        
+      }
+
+      else if (windowWidth <= 1000) {
+          $('.font').html("Coals to Newcastle, bringing Mitford and me up here for a tertiary.")
+            
+      }
+
+      else if (windowWidth <= 1025) {
+          $('.font').html("Didn’t know you were in the States, Mitty,” grumbled Remington.")
+                 
+      }
+
+      else if (windowWidth <= 1050) {
+          $('.font').html("Thank you, said Walter Mitty")
+          
+      }
+
+      else if (windowWidth <= 1075) {
+          $('.font').html("A brilliant performance, sir.")
+               
+      }
+
+      else if (windowWidth <= 1100) {
+          $('.font').html("I’ve read your book on streptothricosis, said Pritchard-Mitford, shaking hands.")
+         
+      }
+
+      else if (windowWidth <= 1125) {
+          $('.font').html("Dr. Remington, Dr. Mitty. Dr. Pritchard-Mitford, Dr. Mitty.")
+         
+      }
+
+      else if (windowWidth <= 1150) {
+          $('.font').html("In the operating room there were whispered introductions:")
+           
+      }
+
+      else if (windowWidth <= 1175) {
+          $('.font').html("Glad to, said Mitty.")
+         
+      }
+
+      else if (windowWidth <= 1200) {
+          $('.font').html("Wish you’d take a look at him.")
+            
+      }
+
+      else if (windowWidth <= 1225) {
+          $('.font').html("Obstreosis of the ductal tract. Tertiary.")
+             
+      }
+
+      else if (windowWidth <= 1250) {
+          $('.font').html("We’re having the devil’s own time with McMillan, the millionaire banker and close personal friend of Roosevelt.")
+             
+      }
+
+      else if (windowWidth <= 1275) {
+          $('.font').html("Hello, Mitty, he said")
+         
+      }
+
+      else if (windowWidth <= 1300) {
+          $('.font').html("He looked distraught and haggard.")
+               
+      }
+
+      else if (windowWidth <= 1325) {
+          $('.font').html("A door opened down a long, cool corridor and Dr. Renshaw came out.")
+                 
+      }
+
+      else if (windowWidth <= 1350) {
+          $('.font').html("Dr. Renshaw and Dr. Benbow, but there are two specialists here, Dr. Remington from New York and Dr. Pritchard-Mitford from London. He flew over.")
+            
+      }
+
+      else if (windowWidth <= 1375) {
+          $('.font').html("Who has the case?")
+             
+      }
+
+      else if (windowWidth <= 1400) {
+          $('.font').html("Yes? said Walter Mitty, removing his gloves slowly.")
+         
+      }
+
+      else if (windowWidth <= 1600) {
+          $('.font').html("It’s the millionaire banker, Wellington McMillan, said the pretty nurse.")
+               
+      }
+
+
+
+    }
+
+    // Execute on load
+    checkWidth();
+    // Bind event listener
+    $(window).resize(checkWidth);
+})
+  </script>
+<script type="text/javascript">
+      $(document).ready(function() {
+
+  $(window).load(function() {
+     $("#screenwash").animate({top:"0px"}, 2000, "swing");
+    });
+
+  function hideText() {
+        $("#screenwash").css({display: "none"});
+    }
+
+
+  var width400 = window.matchMedia("(min-width: 400px) and (max-width: 405px)");
+  var width450 = window.matchMedia("(min-width: 450px) and (max-width: 455px)");
+  var width500 = window.matchMedia("(min-width: 500px) and (max-width: 505px)");
+  var width550 = window.matchMedia("(min-width: 550px) and (max-width: 555px)");
+  var width600 = window.matchMedia("(min-width: 600px) and (max-width: 605px)");
+  var width650 = window.matchMedia("(min-width: 650px) and (max-width: 655px)");
+  var width700 = window.matchMedia("(min-width: 700px) and (max-width: 705px)");
+  var width750 = window.matchMedia("(min-width: 750px)");
+  var width800 = window.matchMedia("(min-width: 800px)");
+  var width850 = window.matchMedia("(min-width: 850px)");
+  var width900 = window.matchMedia("(min-width: 900px)");
+  var width950 = window.matchMedia("(min-width: 950px)");
+  var width1000 = window.matchMedia("(min-width: 1000px)");
+  var width1050 = window.matchMedia("(min-width: 1050px)");
+  var width1100 = window.matchMedia("(min-width: 1100px)");
+  var width1150 = window.matchMedia("(min-width: 1150px)");
+  var width1200 = window.matchMedia("(min-width: 1200px)");
+  var width1250 = window.matchMedia("(min-width: 1250px)");
+  var width1300 = window.matchMedia("(min-width: 1300px)");
+  var width1350 = window.matchMedia("(min-width: 1350px)");
+  var width1400 = window.matchMedia("(min-width: 1400px)");
+  var width1440 = window.matchMedia("(min-width: 100%)");
+
+  var height175 = window.matchMedia("(min-height: 175px)");
+  var height225 = window.matchMedia("(min-height: 225px)");
+  var height275 = window.matchMedia("(min-height: 275px)");
+  var height325 = window.matchMedia("(min-height: 325px)");
+  var height375 = window.matchMedia("(min-height: 375px)");
+  var height425 = window.matchMedia("(min-height: 425px)");
+  var height475 = window.matchMedia("(min-height: 475px)");
+  var height525 = window.matchMedia("(min-height: 525px)");
+  var height575 = window.matchMedia("(min-height: 575px)");
+  var height625 = window.matchMedia("(min-height: 625px)");
+  var height675 = window.matchMedia("(min-height: 675px)");
+  var height725 = window.matchMedia("(min-height: 725px)"); /*defunct in this screen*/
+  var height740 = window.matchMedia("(min-height: 740px)");
+
+
+// media query event handler
+if (matchMedia) {
+  var width400 = window.matchMedia("(min-width: 350px) and (max-width: 400px)");
+  width400.addListener(WidthChange1);
+  WidthChange1(width400);
+}
+
+
+var winW400;
+
+
+// media query change
+function WidthChange1(width400) {
+  if (width400.matches) {
+      var randomTop = Math.floor((Math.random() * 675) + 0);
+      var randomLeft = Math.floor((Math.random() * 1340) + 0);
+      var Width = 400;
+      var Height = 300;
+      winW400 = window.open("index5.html",'_blank', "resizable=yes,width=1600px" + ",Width" + Width + ",height=1200px" + Height + ",top=" + randomTop +",left=" + randomLeft +"");
+      setTimeout(winW400.focus, 0);
+      
+      
+    }
+}
+
+});
+
+    </script>
+
+</body>
+</html>
+
+
+
